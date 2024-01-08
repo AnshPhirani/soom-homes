@@ -14,7 +14,7 @@ const ModalSuccess = ({ showSuccess, setShowSuccess }) => {
           <div className="section-content has-text-centered">
             <Image
               className="mb-3"
-              src={"./check.png"}
+              src={"/check.png"}
               width={100}
               alt={""}
               height={100}
@@ -79,7 +79,7 @@ export default function BookModal({ isActive, setIsActive }) {
             className="delete"
             aria-label="close"
           >
-            <Image src="./modal-close.png" width={20} height={20} />
+            <Image src="/modal-close.png" width={20} height={20} />
           </button>
         </div>
         <div className="modal-card">
