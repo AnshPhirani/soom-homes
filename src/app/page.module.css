@@ -1,0 +1,262 @@
+/** FRAME WRAPPER **/
+.frameContainer {
+  border-radius: var(--br-base);
+  box-shadow: var(--shadow-shadow-4);
+  padding: var(--padding-base) var(--padding-5xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.frameWrapper {
+  border-radius: var(--br-base);
+  background-color: rgba(19, 19, 19, 0.34);
+  backdrop-filter: blur(16px);
+  text-align: left;
+  font-size: var(--typescale-body3-medium-size);
+}
+
+.frameItem {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.frameItem select,
+.frameItem input {
+  padding: 5px !important;
+  width: 100%;
+  font-size: 15px;
+}
+
+.frameItem:nth-child(1) {
+  border-right: 1px solid #8e8e8e;
+}
+
+.locationInput {
+  background-color: transparent;
+  border: none;
+  color: #fff !important;
+}
+
+.locationInput:focus {
+  outline: 0;
+}
+
+.locationInput::placeholder {
+  color: #fdfdfd;
+}
+
+.projectsCompleted .projectsCompletedItem {
+  text-align: center;
+}
+
+.projectsCompleted .projectsCompletedItem p:nth-child(1) {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.projectsCompleted .projectsCompletedItem p:nth-child(2) {
+  font-size: 0.8rem;
+  color: var(--black-black5) !important;
+}
+
+/* Styles for the select element */
+.dropdownSelect {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+/* Style the dropdown list */
+.dropdownSelect::-ms-expand {
+  /* Hide the default arrow in IE */
+  display: none;
+}
+
+.dropdown {
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  /* Add a custom dropdown arrow */
+  background-image: url("/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+/* Style the dropdown options */
+.dropdown option {
+  background-color: #000;
+  color: #fff;
+}
+
+/**CARD**/
+.serviceCardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.serviceCardWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--gap-13xl);
+}
+
+.serviceCardWrapper:nth-child(1) {
+  transform: translate(0%, 10%);
+}
+
+.serviceCardWrapper:nth-child(2) {
+  transform: translate(0%, -10%);
+}
+
+.serviceCard {
+  max-width: 350px;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding-21xl) var(--padding-xl);
+  border-radius: var(--br-13xl);
+  color: #fff !important;
+}
+
+.serviceCardIcon {
+  margin-bottom: 30px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.serviceCard.hasBrandBg {
+  background-color: var(--brand) !important;
+}
+
+.serviceCard.hasBlackBg {
+  background-color: var(--black1) !important;
+}
+
+.cleaningItemsWrapper {
+  width: 100%;
+  height: 50px;
+}
+
+.cleaningItems {
+  position: absolute;
+  right: -25px;
+  transform: translate(0%, -30%);
+}
+
+.cleaningItemsSingle {
+  text-align: right;
+}
+
+.cleaningItemsSingle:nth-child(1) {
+  transform: translate(0%, -20%);
+}
+
+.cleaningItemsSingle:nth-child(2) {
+  transform: translate(0%, -100%);
+}
+
+.testimonialContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.testimonialItem {
+  align-self: center;
+  text-align: center;
+}
+
+.testimonialItem .testimonialController {
+  display: none;
+}
+
+/* Styles for Mobile Screens */
+@media screen and (max-width: 767px) {
+  .frameContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .frameItem:nth-child(1) {
+    border-right: none !important;
+    border-bottom: 1px solid #8e8e8e;
+  }
+
+  .frameItem > button,
+  .frameItem > div {
+    width: 100%;
+  }
+
+  .projectsCompleted .projectsCompletedItem {
+    max-width: 100px;
+  }
+
+  .serviceCardWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--gap-13xl);
+  }
+
+  .testimonialItem h4 {
+    font-size: 1rem !important;
+  }
+
+  .cleaningItemsWrapper {
+    width: 100%;
+    height: 20px;
+  }
+
+  .cleaningItems {
+    position: absolute;
+    right: -25px;
+    transform: translate(0%, -15%);
+  }
+
+  .page_cleaningItemsSingle__hRswf:nth-child(2) {
+    transform: translate(0%, -120%);
+  }
+
+  .cleaningItemsSingle:nth-child(1) img {
+    width: 250px;
+  }
+
+  .cleaningItemsSingle:nth-child(2) img {
+    width: 200px;
+  }
+
+  .serviceCardContainer {
+    flex-direction: column;
+  }
+
+  .serviceCardWrapper {
+    transform: none !important;
+  }
+
+  .testimonialItem .testimonialController {
+    background-color: transparent;
+    border: unset;
+    display: block;
+  }
+}
