@@ -2,8 +2,9 @@
 
 // next.config.js
 const nextConfig = {
-    output: 'export',
-    images: { unoptimized: true }
-}
+  output: "export",
+  images: { unoptimized: true },
+  basePath: "/soom-homes",
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
