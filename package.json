@@ -1,5 +1,5 @@
 {
-  "name": "home-sparkle",
+  "name": "soom-homes",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,5 +14,9 @@
     "react-dom": "18.2.0",
     "react-responsive-carousel": "^3.2.23",
     "react-swipeable": "^7.0.1"
+  },
+  "devDependencies": {
+    "eslint": "8.52.0",
+    "eslint-config-next": "14.0.0"
   }
 }
