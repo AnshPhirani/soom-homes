@@ -3,7 +3,7 @@
 // next.config.js
 const nextConfig = {
   output: "export",
-  //   images: { unoptimized: true },
+  images: { unoptimized: true },
   reactStrictMode: true,
   swcMinify: true,
   //   basePath: "/soom-homes",

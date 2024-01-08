@@ -15,8 +15,5 @@
     "react-responsive-carousel": "^3.2.23",
     "react-swipeable": "^7.0.1"
   },
-  "devDependencies": {
-    "eslint": "8.52.0",
-    "eslint-config-next": "14.0.0"
-  }
+  "devDependencies": {}
 }
