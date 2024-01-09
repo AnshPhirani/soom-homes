@@ -315,7 +315,7 @@ export default function Home() {
                   disabled={currentSlide === 0}
                 >
                   <Image
-                    src="/chevron-back-outline.svg"
+                    src="/soom-homes/chevron-back-outline.svg"
                     width={25}
                     height={25}
                   />
@@ -331,7 +331,7 @@ export default function Home() {
                   disabled={currentSlide === 2}
                 >
                   <Image
-                    src="/chevron-forward-outline.svg"
+                    src="/soom-homes/chevron-forward-outline.svg"
                     width={25}
                     height={25}
                   />
@@ -355,7 +355,7 @@ export default function Home() {
               {/* style={{ marginRight: '-80px' }} */}
               <div className="carousel-item">
                 <Image
-                  src="/testimonial-1.svg"
+                  src="/soom-homes/testimonial-1.svg"
                   width={500}
                   height={500}
                   alt=""
@@ -363,7 +363,7 @@ export default function Home() {
               </div>
               <div className="carousel-item">
                 <Image
-                  src="/testimonial-2.svg"
+                  src="/soom-homes/testimonial-2.svg"
                   width={500}
                   height={500}
                   alt=""
@@ -372,7 +372,7 @@ export default function Home() {
               {/* style={{ marginLeft: '-80px' }} */}
               <div className="carousel-item">
                 <Image
-                  src="/testimonial-3.svg"
+                  src="/soom-homes/testimonial-3.svg"
                   width={500}
                   height={500}
                   alt=""
@@ -384,7 +384,7 @@ export default function Home() {
             <div className="columns">
               <div className="column is-4">
                 <Image
-                  src="/testimonial-1.svg"
+                  src="/soom-homes/testimonial-1.svg"
                   width={360}
                   height={360}
                   alt=""
@@ -392,7 +392,7 @@ export default function Home() {
               </div>
               <div className="column is-4">
                 <Image
-                  src="/testimonial-2.svg"
+                  src="/soom-homes/testimonial-2.svg"
                   width={500}
                   height={500}
                   alt=""
@@ -400,7 +400,7 @@ export default function Home() {
               </div>
               <div className="column is-4">
                 <Image
-                  src="/testimonial-3.svg"
+                  src="/soom-homes/testimonial-3.svg"
                   width={360}
                   height={360}
                   alt=""

@@ -18,10 +18,10 @@ export default function Navbar() {
 
   //all Nav Items
   const navItems = {
-    Home: "/soom-homes",
-    About: "soom-homes/about",
-    Services: "soom-homes/services",
-    Contact: "soom-homes/contact",
+    Home: "/",
+    About: "/about",
+    Services: "/services",
+    Contact: "/contact",
   };
 
   const [currentUrl, setCurrentUrl] = useState("/");
