@@ -80,7 +80,7 @@ export default function Navbar() {
                 <a
                   key={ind}
                   className={`navbar-item ${isActive ? "is-active" : ""} `}
-                  href={navItems[val]}
+                  href={"soom-homes/" + navItems[val]}
                   onClick={unToggleMobileNav}
                 >
                   {val}
