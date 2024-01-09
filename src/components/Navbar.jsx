@@ -19,9 +19,9 @@ export default function Navbar() {
   //all Nav Items
   const navItems = {
     Home: "/",
-    About: "about",
-    Services: "services",
-    Contact: "contact",
+    About: "/about",
+    Services: "/services",
+    Contact: "/contact",
   };
 
   const [currentUrl, setCurrentUrl] = useState("/");
@@ -32,6 +32,7 @@ export default function Navbar() {
       typeof window.location !== "undefined"
     ) {
       setCurrentUrl(window.location.pathname);
+      console.log(window.location.pathname);
     }
   }, []);
 
