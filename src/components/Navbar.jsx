@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import BookModal from "./BookModal";
+import Link from "next/link";
 
 export default function Navbar() {
   const toggleMobileNav = function () {
@@ -11,7 +12,9 @@ export default function Navbar() {
     document.querySelector(".navbar-menu")?.classList.toggle("is-active");
   };
 
-  const unToggleMobileNav = () => {
+  const unToggleMobileNav = (newPath) => {
+    setCurrentUrl(newPath);
+    console.log("clicked");
     document.querySelector(".navbar-burger")?.classList.remove("is-active");
     document.querySelector(".navbar-menu")?.classList.remove("is-active");
   };
@@ -78,14 +81,14 @@ export default function Navbar() {
               const isActive = currentUrl === navItems[val];
 
               return (
-                <a
+                <Link
                   key={ind}
                   className={`navbar-item ${isActive ? "is-active" : ""} `}
                   href={navItems[val]}
-                  onClick={unToggleMobileNav}
+                  onClick={() => unToggleMobileNav(navItems[val])}
                 >
                   {val}
-                </a>
+                </Link>
               );
             })}
             <div className="navbar-item hide-on-desktop show-on-tablet">
