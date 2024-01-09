@@ -6,7 +6,7 @@ const nextConfig = {
   images: { unoptimized: true },
   reactStrictMode: true,
   swcMinify: true,
-  basePath: "/soom-homes",
+  //   basePath: "/soom-homes",
 };
 
 module.exports = nextConfig;
