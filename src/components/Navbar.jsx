@@ -18,10 +18,10 @@ export default function Navbar() {
 
   //all Nav Items
   const navItems = {
-    Home: "/",
-    About: "/about",
-    Services: "/services",
-    Contact: "/contact",
+    Home: "",
+    About: "about",
+    Services: "services",
+    Contact: "contact",
   };
 
   const [currentUrl, setCurrentUrl] = useState("/");
@@ -80,7 +80,7 @@ export default function Navbar() {
                 <a
                   key={ind}
                   className={`navbar-item ${isActive ? "is-active" : ""} `}
-                  href={"soom-homes/" + navItems[val]}
+                  href={navItems[val]}
                   onClick={unToggleMobileNav}
                 >
                   {val}
