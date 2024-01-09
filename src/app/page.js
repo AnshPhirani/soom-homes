@@ -132,7 +132,12 @@ export default function Home() {
                   </div>
                   <div className={styles.frameItem}>
                     <span className="icon">
-                      <Image width={15} height={15} alt="" src="/book.svg" />
+                      <Image
+                        width={15}
+                        height={15}
+                        alt=""
+                        src="soom-homes/book.svg"
+                      />
                     </span>
                     <div className={styles.dropdownSelect}>
                       <select defaultValue={""} className={styles.dropdown}>
@@ -204,13 +209,21 @@ export default function Home() {
                 <a href="/about" className="button btn-brand is-outline">
                   Read more about us
                   <span className="icon">
-                    <Image src="/arrow-right.svg" width={20} height={20} />
+                    <Image
+                      src="soom-homes/arrow-right.svg"
+                      width={20}
+                      height={20}
+                    />
                   </span>
                 </a>
               </div>
             </div>
             <div className="column is-6">
-              <Image src="/why-choose-us.svg" width={500} height={500} />
+              <Image
+                src="soom-homes/why-choose-us.svg"
+                width={500}
+                height={500}
+              />
             </div>
           </div>
         </div>
@@ -228,7 +241,11 @@ export default function Home() {
                 className={`card ${styles.serviceCard} ${styles.hasBrandBg}`}
               >
                 <div className={styles.serviceCardIcon}>
-                  <Image src="/cleaning-item-1.svg" width={20} height={20} />
+                  <Image
+                    src="soom-homes/cleaning-item-1.svg"
+                    width={20}
+                    height={20}
+                  />
                 </div>
                 <h5 className="title is-5 has-text-white">
                   Commercial Cleaning
@@ -244,7 +261,11 @@ export default function Home() {
                 className={`card ${styles.serviceCard} ${styles.hasBlackBg}`}
               >
                 <div className={styles.serviceCardIcon}>
-                  <Image src="/cleaning-item-3.svg" width={20} height={20} />
+                  <Image
+                    src="soom-homes/cleaning-item-3.svg"
+                    width={20}
+                    height={20}
+                  />
                 </div>
                 <h5 className="title is-5 has-text-white">Office Cleaning</h5>
                 <p>
@@ -260,7 +281,11 @@ export default function Home() {
                 className={`card ${styles.serviceCard} ${styles.hasBrandBg}`}
               >
                 <div className={styles.serviceCardIcon}>
-                  <Image src="/cleaning-item-2.svg" width={20} height={20} />
+                  <Image
+                    src="soom-homes/cleaning-item-2.svg"
+                    width={20}
+                    height={20}
+                  />
                 </div>
                 <h5 className="title is-5 has-text-white">Domestic Cleaning</h5>
                 <p>
