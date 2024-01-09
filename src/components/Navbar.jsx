@@ -18,10 +18,10 @@ export default function Navbar() {
 
   //all Nav Items
   const navItems = {
-    Home: "/",
-    About: "/about",
-    Services: "/services",
-    Contact: "/contact",
+    Home: "/soom-homes",
+    About: "soom-homes/about",
+    Services: "soom-homes/services",
+    Contact: "soom-homes/contact",
   };
 
   const [currentUrl, setCurrentUrl] = useState("/");
@@ -50,7 +50,7 @@ export default function Navbar() {
         <div className="navbar-brand is-flex is-justify-content-center">
           <a href="/" className="navbar-brand-link">
             <Image
-              src={"/logo.png"}
+              src={"/soom-homes/logo.png"}
               alt={"SOOM HOMES"}
               width={"50"}
               height={"50"}
