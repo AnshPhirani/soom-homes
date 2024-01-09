@@ -108,7 +108,7 @@ export default function Home() {
                         width={15}
                         height={15}
                         alt=""
-                        src="/search-icon.svg"
+                        src="/soom-homes/search-icon.svg"
                       />
                     </span>
                     {/* <input
