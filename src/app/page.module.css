@@ -87,7 +87,7 @@
   border: none;
   color: #fff;
   /* Add a custom dropdown arrow */
-  background-image: url("/arrow-down.svg");
+  background-image: url("/soom-homes/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right center;
 }

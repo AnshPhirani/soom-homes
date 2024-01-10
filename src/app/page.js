@@ -138,7 +138,7 @@ export default function Home() {
                         width={15}
                         height={15}
                         alt=""
-                        src="soom-homes/book.svg"
+                        src="/soom-homes/book.svg"
                       />
                     </span>
                     <div className={styles.dropdownSelect}>
@@ -212,7 +212,7 @@ export default function Home() {
                   Read more about us
                   <span className="icon">
                     <Image
-                      src="soom-homes/arrow-right.svg"
+                      src="/soom-homes/arrow-right.svg"
                       width={20}
                       height={20}
                     />
@@ -244,7 +244,7 @@ export default function Home() {
               >
                 <div className={styles.serviceCardIcon}>
                   <Image
-                    src="soom-homes/cleaning-item-1.svg"
+                    src="/soom-homes/cleaning-item-1.svg"
                     width={20}
                     height={20}
                   />
@@ -264,7 +264,7 @@ export default function Home() {
               >
                 <div className={styles.serviceCardIcon}>
                   <Image
-                    src="soom-homes/cleaning-item-3.svg"
+                    src="/soom-homes/cleaning-item-3.svg"
                     width={20}
                     height={20}
                   />
@@ -284,7 +284,7 @@ export default function Home() {
               >
                 <div className={styles.serviceCardIcon}>
                   <Image
-                    src="soom-homes/cleaning-item-2.svg"
+                    src="/soom-homes/cleaning-item-2.svg"
                     width={20}
                     height={20}
                   />
