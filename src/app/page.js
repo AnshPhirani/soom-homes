@@ -6,6 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "@/styles/root.css";
 import styles from "./page.module.css";
 import { useState } from "react";
+import Link from "next/link";
 
 const HowCleaningHappens = () => {
   const [index, setIndex] = useState(0);
@@ -203,12 +204,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="section-content">
-                <a href="/about" className="button btn-brand is-outline">
+                <Link href="/about" className="button btn-brand is-outline">
                   Read more about us
                   <span className="icon">
                     <Image src="./arrow-right.svg" width={20} height={20} />
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="column is-6">

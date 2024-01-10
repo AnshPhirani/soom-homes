@@ -52,7 +52,7 @@ export default function Navbar() {
         aria-label="main navigation"
       >
         <div className="navbar-brand is-flex is-justify-content-center">
-          <a href="/" className="navbar-brand-link">
+          <Link href="/" className="navbar-brand-link">
             <Image
               src={"/soom-homes/logo.png"}
               alt={"SOOM HOMES"}
@@ -60,7 +60,7 @@ export default function Navbar() {
               height={"50"}
             />
             <h3 style={{ color: "black", textAlign: "center" }}>SOOM HOMES</h3>
-          </a>
+          </Link>
 
           <a
             role="button"

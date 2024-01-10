@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="column is-5 has-text-right-desktop">
             <Image
               className={styles.brandImage}
-              src="/logo.png"
+              src="./logo.png"
               width={50}
               height={50}
               alt=""
