@@ -110,7 +110,7 @@ export default function Home() {
                         width={15}
                         height={15}
                         alt=""
-                        src="/soom-homes/search-icon.svg"
+                        src="./location-icon.svg"
                       />
                     </span>
                     {/* <input
@@ -134,12 +134,7 @@ export default function Home() {
                   </div>
                   <div className={styles.frameItem}>
                     <span className="icon">
-                      <Image
-                        width={15}
-                        height={15}
-                        alt=""
-                        src="/soom-homes/book.svg"
-                      />
+                      <Image width={15} height={15} alt="" src="./book.svg" />
                     </span>
                     <div className={styles.dropdownSelect}>
                       <select defaultValue={""} className={styles.dropdown}>
