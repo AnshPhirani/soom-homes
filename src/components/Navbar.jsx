@@ -35,7 +35,7 @@ export default function Navbar() {
       typeof window.location !== "undefined"
     ) {
       setCurrentUrl(window.location.pathname);
-      console.log(window.location.pathname);
+      // console.log(window.location.pathname);
     }
   }, []);
 
