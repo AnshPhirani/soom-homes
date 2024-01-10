@@ -301,7 +301,11 @@ export default function Home() {
                 className={`card ${styles.serviceCard} ${styles.hasBlackBg}`}
               >
                 <div className={styles.serviceCardIcon}>
-                  <Image src="/cleaning-item-4.svg" width={20} height={20} />
+                  <Image
+                    src="/soom-homes/cleaning-item-4.svg"
+                    width={20}
+                    height={20}
+                  />
                 </div>
                 <h5 className="title is-5 has-text-white">
                   End of Lease Cleaning

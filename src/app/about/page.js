@@ -18,7 +18,7 @@ export default function About() {
       <section className={styles.missionWrapper}>
         <div className={styles.mission}>
           <div className={styles.missionIcon}>
-            <Image src="/mission-goal.jpg" width={25} height={25} />{" "}
+            <Image src="./mission-goal.jpg" width={25} height={25} />{" "}
             <span>Mission</span>
           </div>
           <div className={styles.missionText}>
