@@ -206,21 +206,13 @@ export default function Home() {
                 <a href="/about" className="button btn-brand is-outline">
                   Read more about us
                   <span className="icon">
-                    <Image
-                      src="/soom-homes/arrow-right.svg"
-                      width={20}
-                      height={20}
-                    />
+                    <Image src="./arrow-right.svg" width={20} height={20} />
                   </span>
                 </a>
               </div>
             </div>
             <div className="column is-6">
-              <Image
-                src="/soom-homes/why-choose-us.svg"
-                width={500}
-                height={500}
-              />
+              <Image src="./why-choose-us.svg" width={500} height={500} />
             </div>
           </div>
         </div>
@@ -238,11 +230,7 @@ export default function Home() {
                 className={`card ${styles.serviceCard} ${styles.hasBrandBg}`}
               >
                 <div className={styles.serviceCardIcon}>
-                  <Image
-                    src="/soom-homes/cleaning-item-1.svg"
-                    width={20}
-                    height={20}
-                  />
+                  <Image src="./cleaning-item-1.svg" width={20} height={20} />
                 </div>
                 <h5 className="title is-5 has-text-white">
                   Commercial Cleaning
@@ -258,11 +246,7 @@ export default function Home() {
                 className={`card ${styles.serviceCard} ${styles.hasBlackBg}`}
               >
                 <div className={styles.serviceCardIcon}>
-                  <Image
-                    src="/soom-homes/cleaning-item-3.svg"
-                    width={20}
-                    height={20}
-                  />
+                  <Image src="./cleaning-item-3.svg" width={20} height={20} />
                 </div>
                 <h5 className="title is-5 has-text-white">Office Cleaning</h5>
                 <p>
@@ -278,11 +262,7 @@ export default function Home() {
                 className={`card ${styles.serviceCard} ${styles.hasBrandBg}`}
               >
                 <div className={styles.serviceCardIcon}>
-                  <Image
-                    src="/soom-homes/cleaning-item-2.svg"
-                    width={20}
-                    height={20}
-                  />
+                  <Image src="./cleaning-item-2.svg" width={20} height={20} />
                 </div>
                 <h5 className="title is-5 has-text-white">Domestic Cleaning</h5>
                 <p>
@@ -296,11 +276,7 @@ export default function Home() {
                 className={`card ${styles.serviceCard} ${styles.hasBlackBg}`}
               >
                 <div className={styles.serviceCardIcon}>
-                  <Image
-                    src="/soom-homes/cleaning-item-4.svg"
-                    width={20}
-                    height={20}
-                  />
+                  <Image src="./cleaning-item-4.svg" width={20} height={20} />
                 </div>
                 <h5 className="title is-5 has-text-white">
                   End of Lease Cleaning
@@ -341,7 +317,7 @@ export default function Home() {
                   disabled={currentSlide === 0}
                 >
                   <Image
-                    src="/soom-homes/chevron-back-outline.svg"
+                    src="./chevron-back-outline.svg"
                     width={25}
                     height={25}
                   />
@@ -357,7 +333,7 @@ export default function Home() {
                   disabled={currentSlide === 2}
                 >
                   <Image
-                    src="/soom-homes/chevron-forward-outline.svg"
+                    src="./chevron-forward-outline.svg"
                     width={25}
                     height={25}
                   />
@@ -381,7 +357,7 @@ export default function Home() {
               {/* style={{ marginRight: '-80px' }} */}
               <div className="carousel-item">
                 <Image
-                  src="/soom-homes/testimonial-1.svg"
+                  src="./testimonial-1.svg"
                   width={500}
                   height={500}
                   alt=""
@@ -389,7 +365,7 @@ export default function Home() {
               </div>
               <div className="carousel-item">
                 <Image
-                  src="/soom-homes/testimonial-2.svg"
+                  src="./testimonial-2.svg"
                   width={500}
                   height={500}
                   alt=""
@@ -398,7 +374,7 @@ export default function Home() {
               {/* style={{ marginLeft: '-80px' }} */}
               <div className="carousel-item">
                 <Image
-                  src="/soom-homes/testimonial-3.svg"
+                  src="./testimonial-3.svg"
                   width={500}
                   height={500}
                   alt=""
@@ -410,7 +386,7 @@ export default function Home() {
             <div className="columns">
               <div className="column is-4">
                 <Image
-                  src="/soom-homes/testimonial-1.svg"
+                  src="./testimonial-1.svg"
                   width={360}
                   height={360}
                   alt=""
@@ -418,7 +394,7 @@ export default function Home() {
               </div>
               <div className="column is-4">
                 <Image
-                  src="/soom-homes/testimonial-2.svg"
+                  src="./testimonial-2.svg"
                   width={500}
                   height={500}
                   alt=""
@@ -426,7 +402,7 @@ export default function Home() {
               </div>
               <div className="column is-4">
                 <Image
-                  src="/soom-homes/testimonial-3.svg"
+                  src="./testimonial-3.svg"
                   width={360}
                   height={360}
                   alt=""
