@@ -29,15 +29,15 @@ export default function Navbar() {
 
   const [currentUrl, setCurrentUrl] = useState("/");
 
-  // useEffect(() => {
-  //   if (
-  //     typeof window !== "undefined" &&
-  //     typeof window.location !== "undefined"
-  //   ) {
-  //     setCurrentUrl(window.location.pathname);
-  //     // console.log(window.location.pathname);
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (
+      typeof window !== "undefined" &&
+      typeof window.location !== "undefined"
+    ) {
+      setCurrentUrl(window.location.pathname);
+      // console.log(window.location.pathname);
+    }
+  }, []);
 
   //Modal
 
