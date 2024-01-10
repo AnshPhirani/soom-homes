@@ -21,7 +21,7 @@ export default function Navbar() {
 
   //all Nav Items
   const navItems = {
-    Home: "",
+    Home: "/x",
     About: "/about",
     Services: "/services",
     Contact: "/contact",
