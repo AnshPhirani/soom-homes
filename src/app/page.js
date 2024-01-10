@@ -17,7 +17,9 @@ const HowCleaningHappens = () => {
     "Restroom",
   ];
 
-  const imageName = `/how-cleaning-happens-${whereCleaningHappens[index]
+  const imageName = `/soom-homes/how-cleaning-happens-${whereCleaningHappens[
+    index
+  ]
     .toLowerCase()
     .replace(" ", "-")}.svg`;
 
