@@ -222,7 +222,7 @@ export default function Home() {
             </div>
             <div className="column is-6">
               <Image
-                src="soom-homes/why-choose-us.svg"
+                src="/soom-homes/why-choose-us.svg"
                 width={500}
                 height={500}
               />

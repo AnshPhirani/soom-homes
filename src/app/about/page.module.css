@@ -14,7 +14,7 @@
 }
 
 .heroBg {
-  background-image: url("/about-hero.svg");
+  background-image: url("./about-hero.svg");
 }
 
 .fw400 {
