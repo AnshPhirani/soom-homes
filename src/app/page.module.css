@@ -48,6 +48,21 @@
 .locationInput::placeholder {
   color: #fdfdfd;
 }
+/* 
+.projectsCompleted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.projectsCompletedItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 
 .projectsCompleted .projectsCompletedItem {
   text-align: center;
@@ -62,6 +77,57 @@
 .projectsCompleted .projectsCompletedItem p:nth-child(2) {
   font-size: 0.8rem;
   color: var(--black-black5) !important;
+} */
+
+.projectsCompleted {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectsCompleted .projectsCompletedItem {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-weight: 500;
+  width: 300px;
+}
+
+.projectsCompleted .projectsCompletedItem:hover {
+  /* background-color: var(--black1); */
+  /* background-color: var(--brand); */
+  background-color: #189a2e;
+}
+
+.projectsCompleted .projectsCompletedItem:hover p:nth-child(1) {
+  color: var(--white1);
+  font-weight: 500;
+}
+
+.projectsCompleted .projectsCompletedItem:hover p:nth-child(2) {
+  color: var(--white2);
+  font-weight: 500;
+}
+
+.projectsCompleted .projectsCompletedItem {
+  background-color: var(--white3);
+}
+
+/** Add Font weight to paragraph elements that are not the first child**/
+.projectsCompleted .projectsCompletedItem p:nth-child(1) {
+  color: var(--black3);
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.projectsCompleted .projectsCompletedItem p:nth-child(2) {
+  color: var(--black2);
+  font-size: 1rem;
 }
 
 /* Styles for the select element */
@@ -184,6 +250,7 @@
 .testimonialItem {
   align-self: center;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .testimonialItem .testimonialController {
@@ -208,8 +275,16 @@
     width: 100%;
   }
 
-  .projectsCompleted .projectsCompletedItem {
+  /* .projectsCompleted .projectsCompletedItem {
     max-width: 100px;
+  } */
+
+  .projectsCompleted {
+    flex-direction: column !important;
+  }
+
+  .projectsCompleted .projectsCompletedItem {
+    width: 100% !important;
   }
 
   .serviceCardWrapper {

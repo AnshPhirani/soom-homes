@@ -7,6 +7,8 @@ import "@/styles/root.css";
 import styles from "./page.module.css";
 import { useState } from "react";
 import Link from "next/link";
+import TestimonialCarousel from "@/components/Testimonial";
+import Reviews from "@/components/Reviews";
 
 const HowCleaningHappens = () => {
   const [index, setIndex] = useState(0);
@@ -18,11 +20,9 @@ const HowCleaningHappens = () => {
     "Restroom",
   ];
 
-  const imageName = `/soom-homes/how-cleaning-happens-${whereCleaningHappens[
-    index
-  ]
+  const imageName = `./how-cleaning-happens-${whereCleaningHappens[index]
     .toLowerCase()
-    .replace(" ", "-")}.svg`;
+    .replace(" ", "-")}.png`;
 
   return (
     <>
@@ -174,32 +174,30 @@ export default function Home() {
                 </p>
               </div>
               <div className="section-content">
-                <div
-                  className={`is-flex is-justify-content-space-between ${styles.projectsCompleted}`}
-                >
+                <div className={`${styles.projectsCompleted}`}>
                   <div className={styles.projectsCompletedItem}>
+                    <Image
+                      src="./healthy-cleaning.png"
+                      width={40}
+                      height={40}
+                    />
                     <p>HEALTHY CLEANING</p>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Quibusdam, eum temporibus odit provident ipsam iure eius
-                      fuga ipsum ullam alias!
-                    </p>
                   </div>
                   <div className={styles.projectsCompletedItem}>
+                    <Image
+                      src="./quality-guarantee.png"
+                      width={40}
+                      height={40}
+                    />
                     <p>QUALITY GUARANTEE</p>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Accusamus ut eaque voluptates ab magnam et quis quaerat
-                      numquam voluptatum sed?
-                    </p>
                   </div>
                   <div className={styles.projectsCompletedItem}>
+                    <Image
+                      src="./risk-free-police.png"
+                      width={40}
+                      height={40}
+                    />
                     <p>RISK FREE POLICES</p>
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Voluptatem iste esse quia officiis corporis natus qui
-                      earum cupiditate deleniti minus.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -308,112 +306,120 @@ export default function Home() {
         <HowCleaningHappens />
       </section>
       <section className="section">
-        <div className="container">
-          <div className="section-content">
-            <div className={styles.testimonialContainer}>
-              <div className={styles.testimonialItem}>
-                <button
-                  className={styles.testimonialController}
-                  onClick={goToPrevious}
-                  disabled={currentSlide === 0}
-                >
-                  <Image
-                    src="./chevron-back-outline.svg"
-                    width={25}
-                    height={25}
-                  />
-                </button>
-              </div>
-              <div className={styles.testimonialItem}>
-                <h4 className="title is-4">What our clients say about us</h4>
-              </div>
-              <div className={styles.testimonialItem}>
-                <button
-                  className={styles.testimonialController}
-                  onClick={goToNext}
-                  disabled={currentSlide === 2}
-                >
-                  <Image
-                    src="./chevron-forward-outline.svg"
-                    width={25}
-                    height={25}
-                  />
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="hide-on-desktop mt-5">
-            <Carousel
-              selectedItem={currentSlide}
-              onChange={handleSelect}
-              showArrows={false}
-              showIndicators={false}
-              showThumbs={false}
-              infiniteLoop={false}
-              autoPlay={false}
-              interval={0}
-              swipeable={false}
-              stopOnHover={false}
-            >
-              {/* style={{ marginRight: '-80px' }} */}
-              <div className="carousel-item">
-                <Image
-                  src="./testimonial-1.svg"
-                  width={500}
-                  height={500}
-                  alt=""
-                />
-              </div>
-              <div className="carousel-item">
-                <Image
-                  src="./testimonial-2.svg"
-                  width={500}
-                  height={500}
-                  alt=""
-                />
-              </div>
-              {/* style={{ marginLeft: '-80px' }} */}
-              <div className="carousel-item">
-                <Image
-                  src="./testimonial-3.svg"
-                  width={500}
-                  height={500}
-                  alt=""
-                />
-              </div>
-            </Carousel>
-          </div>
-          <div className="hide-on-mobile mt-5">
-            <div className="columns">
-              <div className="column is-4">
-                <Image
-                  src="./testimonial-1.svg"
-                  width={360}
-                  height={360}
-                  alt=""
-                />
-              </div>
-              <div className="column is-4">
-                <Image
-                  src="./testimonial-2.svg"
-                  width={500}
-                  height={500}
-                  alt=""
-                />
-              </div>
-              <div className="column is-4">
-                <Image
-                  src="./testimonial-3.svg"
-                  width={360}
-                  height={360}
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          {/* <TestimonialCarousel /> */}
+        <div className={styles.testimonialItem}>
+          <h4 className="title is-4">What our clients say about us</h4>
         </div>
+        <Reviews />
       </section>
     </main>
   );
+}
+
+{
+  /* <div className="section-content">
+<div className={styles.testimonialContainer}>
+<div className={styles.testimonialItem}>
+  <button
+    className={styles.testimonialController}
+    onClick={goToPrevious}
+    disabled={currentSlide === 0}
+  >
+    <Image
+      src="./chevron-back-outline.svg"
+      width={25}
+      height={25}
+    />
+  </button>
+</div>
+<div className={styles.testimonialItem}>
+  <h4 className="title is-4">What our clients say about us</h4>
+</div>
+<div className={styles.testimonialItem}>
+  <button
+    className={styles.testimonialController}
+    onClick={goToNext}
+    disabled={currentSlide === 2}
+  >
+    <Image
+      src="./chevron-forward-outline.svg"
+      width={25}
+      height={25}
+    />
+  </button>
+</div>
+</div>
+</div> */
+}
+{
+  /* <div className="hide-on-desktop mt-5">
+<Carousel
+selectedItem={currentSlide}
+onChange={handleSelect}
+showArrows={false}
+showIndicators={false}
+showThumbs={false}
+infiniteLoop={false}
+autoPlay={false}
+interval={0}
+swipeable={false}
+stopOnHover={false}
+>
+
+<div className="carousel-item">
+  <Image
+    src="./testimonial-1.svg"
+    width={500}
+    height={500}
+    alt=""
+  />
+</div>
+<div className="carousel-item">
+  <Image
+    src="./testimonial-2.svg"
+    width={500}
+    height={500}
+    alt=""
+  />
+</div>
+
+<div className="carousel-item">
+  <Image
+    src="./testimonial-3.svg"
+    width={500}
+    height={500}
+    alt=""
+  />
+</div>
+</Carousel>
+</div> */
+}
+{
+  /* <div className="hide-on-mobile mt-5">
+<div className="columns">
+<div className="column is-4">
+  <Image
+    src="./testimonial-1.svg"
+    width={360}
+    height={360}
+    alt=""
+  />
+</div>
+<div className="column is-4">
+  <Image
+    src="./testimonial-2.svg"
+    width={500}
+    height={500}
+    alt=""
+  />
+</div>
+<div className="column is-4">
+  <Image
+    src="./testimonial-3.svg"
+    width={360}
+    height={360}
+    alt=""
+  />
+</div>
+</div>
+</div> */
 }

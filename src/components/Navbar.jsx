@@ -54,7 +54,7 @@ export default function Navbar() {
         <div className="navbar-brand is-flex is-justify-content-center">
           <Link href="/" className="navbar-brand-link">
             <Image
-              src={"/soom-homes/logo.png"}
+              src={"./logo.png"}
               alt={"SOOM HOMES"}
               width={"50"}
               height={"50"}

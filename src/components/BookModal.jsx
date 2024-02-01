@@ -14,7 +14,7 @@ const ModalSuccess = ({ showSuccess, setShowSuccess }) => {
           <div className="section-content has-text-centered">
             <Image
               className="mb-3"
-              src={"/check.png"}
+              src={"./check.png"}
               width={100}
               alt={""}
               height={100}
