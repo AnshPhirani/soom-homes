@@ -23,7 +23,6 @@ const HowCleaningHappens = () => {
   const imageName = `./how-cleaning-happens-${whereCleaningHappens[index]
     .toLowerCase()
     .replace(" ", "-")}.png`;
-
   return (
     <>
       <div className="container">
