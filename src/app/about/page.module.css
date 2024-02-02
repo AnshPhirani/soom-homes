@@ -14,7 +14,7 @@
 }
 
 .heroBg {
-  background-image: url("/soom-homes/about-hero.svg");
+  background-image: url("/about-hero.svg");
   /* min-height: 300px !important; */
 }
 
@@ -182,7 +182,7 @@
   }
 
   .heroBg {
-    background-image: url("/soom-homes/about-hero-mobile.svg");
+    background-image: url("/about-hero-mobile.svg");
     min-height: 300px !important;
   }
 
