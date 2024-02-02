@@ -93,14 +93,15 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
+  border-radius: 20px;
   font-weight: 500;
   width: 300px;
 }
 
 .projectsCompleted .projectsCompletedItem:hover {
   /* background-color: var(--black1); */
-  /* background-color: var(--brand); */
-  background-color: #189a2e;
+  background-color: var(--brand);
+  /* background-color: #c0e8fe; */
 }
 
 .projectsCompleted .projectsCompletedItem:hover p:nth-child(1) {

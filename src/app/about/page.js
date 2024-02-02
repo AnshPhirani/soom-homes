@@ -23,10 +23,9 @@ export default function About() {
           </div>
           <div className={styles.missionText}>
             <p>
-              Lörem ipsum trassa plogga möling. Monoprebelt fasatt men skimma.
-              Mäskap tritise i onade utom biogisk, att rit-avdrag. Eposade
-              farir, anteng även om neresön holl. Tinat makrokirat såsom
-              multinar.{" "}
+              We provide the best service to our customers through experts who
+              have completed professional training. We will become a cleaning
+              company that constantly strives to provide better service.
             </p>
           </div>
         </div>

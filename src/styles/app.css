@@ -122,7 +122,7 @@ a.navbar-burger {
       rgba(10, 10, 10, 0.5),
       rgba(10, 10, 10, 0.5)
     ),
-    url("/soom-homes/hero-woman.svg");
+    url("/home-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
