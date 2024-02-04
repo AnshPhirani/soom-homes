@@ -10,7 +10,7 @@ import Link from "next/link";
 import TestimonialCarousel from "@/components/Testimonial";
 import Reviews from "@/components/Reviews";
 
-const HowCleaningHappens = () => {
+export const HowCleaningHappens = () => {
   const [index, setIndex] = useState(0);
 
   const whereCleaningHappens = [
@@ -101,78 +101,154 @@ export default function Home() {
               </p>
               <div
                 className={styles.frameWrapper}
-                style={{ maxWidth: "700px", margin: "auto" }}
+                style={{ maxWidth: "500px", margin: "auto" }}
               >
                 <div className={styles.frameContainer}>
+                  <div className={styles.frameItem}>
+                    <span className="icon">
+                      <Image width={15} height={15} alt="" src="./book.svg" />
+                    </span>
+                    <button className={styles.locationInput}> Book </button>
+                  </div>
                   <div className={styles.frameItem}>
                     <span className="icon">
                       <Image
                         width={15}
                         height={15}
                         alt=""
-                        src="./location-icon.svg"
+                        src="./call-icon.svg"
                       />
                     </span>
-                    {/* <input
-                      type="text"
-                      className={styles.locationInput}
-                      id="location-input"
-                      placeholder="Enter your location"
-                    /> */}
-                    <div className={styles.dropdownSelect}>
-                      <select defaultValue={""} className={styles.dropdown}>
-                        <option value="">Select Location</option>
-                        <option>Greater Victoria</option>
-                        <option>Lanford</option>
-                        <option>North Sannich</option>
-                        <option>Sooke</option>
-                        <option>Ducan</option>
-                        <option>Nanaimo</option>
-                        <option>Other</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className={styles.frameItem}>
-                    <span className="icon">
-                      <Image width={15} height={15} alt="" src="./book.svg" />
-                    </span>
-                    <div className={styles.dropdownSelect}>
-                      <select defaultValue={""} className={styles.dropdown}>
-                        <option value="">Type of service</option>
-                        <option>Service 1</option>
-                        <option>Service 2</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className={styles.frameItem}>
-                    <button className="button btn-brand">Request</button>
+                    <button className={styles.locationInput}>
+                      {" "}
+                      (700) 985-2497{" "}
+                    </button>
                   </div>
                 </div>
               </div>
+              {/* <div className={styles.frameContainer}>
+                <button className={styles.frameItem}>Book</button>
+                <button className={styles.frameItem}>7009852497</button>
+              </div> */}
             </section>
           </div>
         </div>
       </section>
+
+      <section className="section">
+        <div className={`container ${styles.serviceProcessContainer}`}>
+          <div className="section-content">
+            <p
+              className="text-center"
+              style={{
+                fontSize: "2.5rem",
+                lineHeight: "1.2",
+                fontWeight: "300",
+              }}
+            >
+              For perfect care
+            </p>
+            <h3
+              className="text-center"
+              style={{
+                fontSize: "2.5rem",
+                lineHeight: "1.2",
+                color: "var(--brand) !important",
+                fontWeight: "bold",
+              }}
+            >
+              <strong style={{ color: "var(--brand) !important" }}>
+                service process
+              </strong>
+            </h3>
+          </div>
+
+          <div className={styles.serviceProcessCardContainer}>
+            <div className={`card ${styles.serviceProcessCard}`}>
+              <div className={styles.serviceProcessCardHeader}>
+                <h4>1</h4>
+                <h5>Client consultation</h5>
+              </div>
+              <hr />
+              <p>
+                We calculate the scope and estimate through consultation with
+                the client.
+              </p>
+            </div>
+            <div className={`card ${styles.serviceProcessCard}`}>
+              <div className={styles.serviceProcessCardHeader}>
+                <h4>2</h4>
+                <h5>Check schedule</h5>
+              </div>
+              <hr />
+              <p>We coordinate schedules with you and confirm your requests.</p>
+            </div>
+
+            <div className={`card ${styles.serviceProcessCard}`}>
+              <div className={styles.serviceProcessCardHeader}>
+                <h4>3</h4>
+                <h5>Cleaning in each area</h5>
+              </div>
+              <hr />
+              <p>
+                We will visit and carry out the work on the date specified in
+                consultation with the customer.
+              </p>
+            </div>
+            <div className={`card ${styles.serviceProcessCard}`}>
+              <div className={styles.serviceProcessCardHeader}>
+                <h4>4</h4>
+                <h5>Balance payment</h5>
+              </div>
+              <hr />
+
+              <p>
+                Once the work is completed, the balance will be paid after
+                inspection by the customer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section">
         <div className="container">
           <div className="columns is-flex-direction-row-reverse">
-            <div className="column is-6">
+            <div className="columns is-flex-direction-column is-justify-content-space-evenly p-2">
               <div className="section-content">
-                <p className="text-primary mb-2">ABOUT SOOM HOMES</p>
-                <h3 className="title is-3 fw-bold">Why Choose Us?</h3>
+                <p
+                  className="text-center"
+                  style={{
+                    color: "var(--brand) !important",
+                    fontSize: "2.5rem",
+                    fontWeight: "bold",
+                    lineHeight: "1.1",
+                  }}
+                >
+                  Perfect care
+                </p>
+                <h3
+                  className="text-center"
+                  style={{
+                    fontSize: "2.5rem",
+                    fontWeight: "bold",
+                    lineHeight: "1.1",
+                  }}
+                >
+                  We provide eco-friendly care services.
+                </h3>
               </div>
               <div className="section-content">
-                <p className="has-text-black-black5">
-                  Lörem ipsum trassa plogga möling. Monoprebelt fasatt men
-                  skimma. Mäskap tritise i onade utom biogisk, att rit-avdrag.
-                  Eposade farir, anteng även om neresön holl. Tinat makrokirat
-                  såsom multinar. Lörem ipsum trassa plogga möling. Monoprebelt
-                  fasatt men skimma. Mäskap tritise i onade utom biogisk, att
-                  rit-avdrag. Eposade farir, anteng även om neresön holl. Tinat
-                  makrokirat såsom multinar.{" "}
+                <p className="has-text-black-black5 text-center is-size-5">
+                  Perfect Care does not use chemicals. <br /> Germany's No. 1
+                  environment-friendly chemical agent Infants, pets, the
+                  elderly, etc. can reside safely after cleaning. <br />
+                  Contains natural ingredients and utilizes the natural
+                  properties of natural <br /> ingredients to <br /> powerfully
+                  remove dirt, stains, and other contaminants.
                 </p>
               </div>
-              <div className="section-content">
+              {/* <div className="section-content">
                 <div className={`${styles.projectsCompleted}`}>
                   <div className={styles.projectsCompletedItem}>
                     <Image
@@ -199,22 +275,27 @@ export default function Home() {
                     <p>RISK FREE POLICES</p>
                   </div>
                 </div>
-              </div>
-              <div className="section-content">
+              </div> */}
+              {/* <div className="section-content">
                 <Link href="/about" className="button btn-brand is-outline">
                   Read more about us
                   <span className="icon">
-                    <Image src="./arrow-right.svg" width={20} height={20} />
+                    <Image src="./arrow-right.svg" width={20} height={15} />
                   </span>
                 </Link>
-              </div>
+              </div> */}
             </div>
             <div className="column is-6">
-              <Image src="./why-choose-us.svg" width={500} height={500} />
+              <Image
+                src="./eco-friendly-products.jpg"
+                width={500}
+                height={500}
+              />
             </div>
           </div>
         </div>
       </section>
+
       <section className="section">
         <div className="container">
           <div className="section-content">
@@ -223,69 +304,46 @@ export default function Home() {
           </div>
 
           <div className={styles.serviceCardContainer}>
-            <div className={` ${styles.serviceCardWrapper}`}>
-              <div
-                className={`card ${styles.serviceCard} ${styles.hasBrandBg}`}
-              >
-                <div className={styles.serviceCardIcon}>
-                  <Image src="./cleaning-item-1.svg" width={20} height={20} />
-                </div>
-                <h5 className="title is-5 has-text-white">
-                  Commercial Cleaning
-                </h5>
-                <p>
-                  Lörem ipsum trassa plogga möling. Monoprebelt fasatt men
-                  skimma. Mäskap tritise i onade utom biogisk, att rit-avdrag.
-                  Eposade farir, anteng även om neresön holl. att rit-avdrag.
-                  Eposade farir, anteng även om neresön holl.
-                </p>
+            <div className={`card ${styles.serviceCard} ${styles.hasBrandBg}`}>
+              <div className={styles.serviceCardIcon}>
+                <Image
+                  src="./home-cleaning.jpg"
+                  width={80}
+                  height={80}
+                  // fill={true}
+                  // style={{ objectFit: "contain" }}
+                />
               </div>
-              <div
-                className={`card ${styles.serviceCard} ${styles.hasBlackBg}`}
-              >
-                <div className={styles.serviceCardIcon}>
-                  <Image src="./cleaning-item-3.svg" width={20} height={20} />
-                </div>
-                <h5 className="title is-5 has-text-white">Office Cleaning</h5>
-                <p>
-                  Lörem ipsum trassa plogga möling. Monoprebelt fasatt men
-                  skimma. Mäskap tritise i onade utom biogisk, att rit-avdrag.
-                  Eposade farir, anteng även om neresön holl. att rit-avdrag.
-                  Eposade farir, anteng även om neresön holl.
-                </p>
-              </div>
+              <h5 className="title is-5 has-text-white ">Home Cleaning</h5>
+              <p>
+                To ensure a pleasant living environment for our customers,
+                Perfect Care's professional technology and long-term experience
+                completely removes various fine dust and pollutants.
+              </p>
             </div>
-            <div className={` ${styles.serviceCardWrapper}`}>
-              <div
-                className={`card ${styles.serviceCard} ${styles.hasBrandBg}`}
-              >
-                <div className={styles.serviceCardIcon}>
-                  <Image src="./cleaning-item-2.svg" width={20} height={20} />
-                </div>
-                <h5 className="title is-5 has-text-white">Domestic Cleaning</h5>
-                <p>
-                  Lörem ipsum trassa plogga möling. Monoprebelt fasatt men
-                  skimma. Mäskap tritise i onade utom biogisk, att rit-avdrag.
-                  Eposade farir, anteng även om neresön holl. att rit-avdrag.
-                  Eposade farir, anteng även om neresön holl.
-                </p>
+            <div className={`card ${styles.serviceCard} ${styles.hasBlackBg}`}>
+              <div className={styles.serviceCardIcon}>
+                <Image src="./cleaning-item-3.svg" width={20} height={20} />
               </div>
-              <div
-                className={`card ${styles.serviceCard} ${styles.hasBlackBg}`}
-              >
-                <div className={styles.serviceCardIcon}>
-                  <Image src="./cleaning-item-4.svg" width={20} height={20} />
-                </div>
-                <h5 className="title is-5 has-text-white">
-                  End of Lease Cleaning
-                </h5>
-                <p>
-                  Lörem ipsum trassa plogga möling. Monoprebelt fasatt men
-                  skimma. Mäskap tritise i onade utom biogisk, att rit-avdrag.
-                  Eposade farir, anteng även om neresön holl. att rit-avdrag.
-                  Eposade farir, anteng även om neresön holl.
-                </p>
+              <h5 className="title is-5 has-text-white">Business Cleaning</h5>
+              <p>
+                To keep the office clean, where you spend the most time on
+                weekdays, we take care of several spaces at once, such as window
+                frames, floors, desks, bathrooms, hallways, conference rooms,
+                and break rooms.
+              </p>
+            </div>
+
+            <div className={`card ${styles.serviceCard} ${styles.hasBrandBg}`}>
+              <div className={styles.serviceCardIcon}>
+                <Image src="./cleaning-item-2.svg" width={20} height={20} />
               </div>
+              <h5 className="title is-5 has-text-white">Window Cleaning</h5>
+              <p>
+                We will remove any dust or dust generated by the fire and
+                collect residues and waste. Perfect Care’s professional staff
+                works quickly and quickly.
+              </p>
             </div>
           </div>
 
@@ -301,9 +359,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
-        <HowCleaningHappens />
-      </section>
+
       <section className="section">
         <div className={styles.testimonialItem}>
           <h4 className="title is-4">What our clients say about us</h4>

@@ -1,8 +1,10 @@
 /** FRAME WRAPPER **/
+
 .frameContainer {
   border-radius: var(--br-base);
   box-shadow: var(--shadow-shadow-4);
-  padding: var(--padding-base) var(--padding-5xl);
+  /* padding: var(--padding-base) var(--padding-5xl); */
+  padding: 10px 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -13,22 +15,23 @@
   border-radius: var(--br-base);
   background-color: rgba(19, 19, 19, 0.34);
   backdrop-filter: blur(16px);
-  text-align: left;
+  text-align: center;
   font-size: var(--typescale-body3-medium-size);
 }
 
 .frameItem {
   width: 100%;
-  padding: 20px;
+  padding: 10px 0px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .frameItem select,
-.frameItem input {
-  padding: 5px !important;
-  width: 100%;
-  font-size: 15px;
+.frameItem input,
+.frameItem button {
+  /* padding: 5px !important; */
+  font-size: 20px;
 }
 
 .frameItem:nth-child(1) {
@@ -165,7 +168,85 @@
   color: #fff;
 }
 
-/**CARD**/
+/* service process section */
+
+.serviceProcessContainer {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.serviceProcessCardContainer {
+  /* display: flex;
+  justify-content: space-between;
+  gap: 30px; */
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.serviceProcessCardWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--gap-13xl);
+}
+
+.serviceProcessCard {
+  /* max-width: 350px;
+  min-height: 200px; */
+  /* display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center; */
+  /* padding: var(--padding-21xl) var(--padding-xl); */
+  padding: 15px;
+  border-radius: var(--br-13xl);
+  background-color: #f8f8f8;
+}
+
+.serviceProcessCardHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.serviceProcessCardHeader > h4 {
+  height: 1.4rem;
+  width: 1.4rem;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: bold;
+  color: var(--black);
+  background-color: var(--brand);
+  color: white;
+  border-radius: 50%;
+}
+.serviceProcessCardHeader > h5 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--brand);
+}
+
+.serviceProcessCard > hr {
+  width: -webkit-fill-available;
+  height: 1px;
+  background-color: rgb(188 188 188);
+}
+
+.serviceProcessCard > p {
+  color: rgb(118, 118, 118) !important;
+  font-size: 1.2rem;
+}
+
+/**services section**/
 .serviceCardContainer {
   display: flex;
   justify-content: center;
@@ -204,11 +285,15 @@
   margin-bottom: 30px;
   width: 80px;
   height: 80px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   background-color: #fff;
   display: flex;
   justify-content: center;
   align-content: center;
+}
+
+.serviceCardIcon img {
+  object-fit: fill;
 }
 
 .serviceCard.hasBrandBg {
@@ -242,6 +327,7 @@
   transform: translate(0%, -100%);
 }
 
+/* Testimonial section */
 .testimonialContainer {
   display: flex;
   justify-content: center;
@@ -321,6 +407,10 @@
   .cleaningItemsSingle:nth-child(2) img {
     width: 200px;
   }
+  /* 
+  .serviceProcessCardContainer {
+    flex-direction: column;
+  } */
 
   .serviceCardContainer {
     flex-direction: column;

@@ -22,7 +22,7 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className="columns is-multiline is-flex-direction-row-reverse">
+        {/* <div className="columns is-multiline is-flex-direction-row-reverse">
           <div className="column is-3">
             <h4 className="is-size-6 mb-4">GET NEWS</h4>
             <div className={styles.newsInputWrapper}>
@@ -32,7 +32,7 @@ export default function Footer() {
               />
               <button className="button">Submit</button>
             </div>
-          </div>
+          </div> 
           <div className="column is-9">
             <div className={`columns is-multiline ${styles.footerNav}`}>
               <div
@@ -158,7 +158,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <p className={styles.rights}>
           Copyright © 2024 SOOM HOMES All rights reserved.
         </p>

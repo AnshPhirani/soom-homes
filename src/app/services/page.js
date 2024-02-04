@@ -1,6 +1,7 @@
 import "@/styles/root.css";
 import styles from "./page.module.css";
 import Image from "next/image";
+import { HowCleaningHappens } from "../page";
 
 export default function Services() {
   return (
@@ -52,6 +53,9 @@ export default function Services() {
             <p>Window Cleaning and others</p>
           </div>
         </div>
+      </section>
+      <section className="mt-20">
+        <HowCleaningHappens />
       </section>
       <section className={`section ${styles.sectionWithPadding}`}>
         <div className="container">
