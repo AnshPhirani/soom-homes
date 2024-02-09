@@ -106,7 +106,7 @@ export default function BookModal({ isActive, setIsActive, selectedServices }) {
             className="delete"
             aria-label="close"
           >
-            <Image src="/modal-close.png" width={20} height={20} />
+            <Image src="./modal-close.png" width={20} height={20} />
           </button>
         </div>
         <div className="modal-card">

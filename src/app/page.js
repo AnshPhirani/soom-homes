@@ -129,8 +129,7 @@ export default function Home() {
                       />
                     </span>
                     <button className={styles.locationInput}>
-                      {" "}
-                      (700) 985-2497{" "}
+                      +1 (250) 885-2497
                     </button>
                   </div>
                 </div>
