@@ -14,6 +14,7 @@
 .frameWrapper {
   border-radius: var(--br-base);
   background-color: rgba(19, 19, 19, 0.34);
+  /* background-color: var(--brand); */
   backdrop-filter: blur(16px);
   text-align: center;
   font-size: var(--typescale-body3-medium-size);
@@ -35,7 +36,8 @@
 }
 
 .frameItem:nth-child(1) {
-  border-right: 1px solid #8e8e8e;
+  /* border-right: 1px solid #8e8e8e; */
+  border-right: 1px solid #fff;
 }
 
 .locationInput {
@@ -241,7 +243,8 @@
 }
 
 .serviceProcessCard > p {
-  color: rgb(118, 118, 118) !important;
+  /* color: rgb(118, 118, 118) !important; */
+  color: #313345 !important;
   font-size: 1.2rem;
 }
 

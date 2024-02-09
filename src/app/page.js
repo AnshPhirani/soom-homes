@@ -9,6 +9,7 @@ import { useState } from "react";
 import Link from "next/link";
 import TestimonialCarousel from "@/components/Testimonial";
 import Reviews from "@/components/Reviews";
+import BookModal, { ServiceSelectModal } from "@/components/BookModal";
 
 export const HowCleaningHappens = () => {
   const [index, setIndex] = useState(0);
@@ -86,6 +87,8 @@ export default function Home() {
     setCurrentSlide(currentSlide + 1);
   };
 
+  const [isModalActive, setIsModalActive] = useState(false);
+
   return (
     <main>
       <section className="hero is-medium">
@@ -101,14 +104,20 @@ export default function Home() {
               </p>
               <div
                 className={styles.frameWrapper}
-                style={{ maxWidth: "500px", margin: "auto" }}
+                style={{ maxWidth: "450px", margin: "auto" }}
               >
                 <div className={styles.frameContainer}>
                   <div className={styles.frameItem}>
                     <span className="icon">
                       <Image width={15} height={15} alt="" src="./book.svg" />
                     </span>
-                    <button className={styles.locationInput}> Book </button>
+                    <button
+                      className={styles.locationInput}
+                      onClick={() => setIsModalActive(true)}
+                    >
+                      {" "}
+                      Book Now{" "}
+                    </button>
                   </div>
                   <div className={styles.frameItem}>
                     <span className="icon">
@@ -126,13 +135,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              {/* <div className={styles.frameContainer}>
-                <button className={styles.frameItem}>Book</button>
-                <button className={styles.frameItem}>7009852497</button>
-              </div> */}
             </section>
           </div>
         </div>
+
+        <ServiceSelectModal
+          isActive={isModalActive}
+          setIsActive={setIsModalActive}
+        />
       </section>
 
       <section className="section">
@@ -213,7 +223,7 @@ export default function Home() {
 
       <section className="section">
         <div className="container">
-          <div className="columns is-flex-direction-row-reverse">
+          <div className="columns is-flex-direction-row-reverse is-justify-content-space-evenly">
             <div className="columns is-flex-direction-column is-justify-content-space-evenly p-2">
               <div className="section-content">
                 <p
@@ -239,7 +249,12 @@ export default function Home() {
                 </h3>
               </div>
               <div className="section-content">
-                <p className="has-text-black-black5 text-center is-size-5">
+                <p
+                  className="text-center is-size-5"
+                  style={{
+                    color: "#313345 !important",
+                  }}
+                >
                   Perfect Care does not use chemicals. <br /> Germany's No. 1
                   environment-friendly chemical agent Infants, pets, the
                   elderly, etc. can reside safely after cleaning. <br />

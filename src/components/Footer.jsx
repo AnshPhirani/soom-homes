@@ -3,26 +3,113 @@ import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
-      <div className="container">
-        <div className="columns is-flex-direction-row-reverse">
-          <div className="column is-5 has-text-right-desktop">
+    <>
+      <section className="section">
+        <div class="columns is-multiline is-centered is-vcentered">
+          <div
+            class="column is-half"
+            style={{
+              display: "flex",
+              "justify-content": "center",
+              "align-items": "center",
+              gap: "20px",
+            }}
+          >
             <Image
-              className={styles.brandImage}
-              src="./logo.png"
-              width={50}
-              height={50}
-              alt=""
+              src={"./tick-icon.svg"}
+              width={24}
+              height={24}
+              className={styles.icon}
             />
+            <h4 className={styles.text}>
+              Use eco-friendly detergents and chemicals!
+            </h4>
           </div>
-          <div className="column is-7 iss-flex is-align-self-center is-justify-content-center">
-            <p className={styles.aboutText}>
-              With a passion for cleanliness and a commitment to excellence, we
-              offer top-tier cleaning services
-            </p>
+          <div
+            class="column is-half"
+            style={{
+              display: "flex",
+              "justify-content": "center",
+              "align-items": "center",
+              gap: "20px",
+            }}
+          >
+            <Image
+              src={"./tick-icon.svg"}
+              width={24}
+              height={24}
+              className={styles.icon}
+            />
+            <h4 className={styles.text}>
+              Free service to remove harmful bacteria and deodorize!
+            </h4>
+          </div>
+          <div
+            class="column is-half"
+            style={{
+              display: "flex",
+              "justify-content": "center",
+              "align-items": "center",
+              gap: "20px",
+            }}
+          >
+            <Image
+              src={"./tick-icon.svg"}
+              width={24}
+              height={24}
+              className={styles.icon}
+            />
+            <h4 className={styles.text}>Use separate mops for each area!</h4>
+          </div>
+          <div
+            class="column is-half"
+            style={{
+              display: "flex",
+              "justify-content": "center",
+              "align-items": "center",
+              gap: "20px",
+            }}
+          >
+            <Image
+              src={"./tick-icon.svg"}
+              width={24}
+              height={24}
+              className={styles.icon}
+            />
+            <h4 className={styles.text}>
+              Phytoncide Sick Building Syndrome Relief Free Service!
+            </h4>
           </div>
         </div>
-        {/* <div className="columns is-multiline is-flex-direction-row-reverse">
+      </section>
+
+      <footer className={styles.footer}>
+        <div className="container">
+          <div className="columns is-flex-direction-row-reverse">
+            <div
+              className="column is-5 has-text-right-desktop"
+              style={{
+                display: "flex",
+                "justify-content": "center",
+                "align-items": "center",
+              }}
+            >
+              <Image
+                className={styles.brandImage}
+                src="./logo.png"
+                width={50}
+                height={50}
+                alt=""
+              />
+            </div>
+            <div className="column is-7 iss-flex is-align-self-center is-justify-content-center">
+              <p className={styles.aboutText}>
+                With a passion for cleanliness and a commitment to excellence,
+                we offer top-tier cleaning services
+              </p>
+            </div>
+          </div>
+          {/* <div className="columns is-multiline is-flex-direction-row-reverse">
           <div className="column is-3">
             <h4 className="is-size-6 mb-4">GET NEWS</h4>
             <div className={styles.newsInputWrapper}>
@@ -159,21 +246,22 @@ export default function Footer() {
             </div>
           </div>
         </div> */}
-        <p className={styles.rights}>
-          Copyright © 2024 SOOM HOMES All rights reserved.
-        </p>
-        <p style={{ marginTop: "10px" }}>
-          Made with ❤️ by{" "}
-          <a
-            style={{ color: "#c9c9c9" }}
-            href="https://www.linkedin.com/in/ansh-phirani/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Ansh Phirani ✨
-          </a>
-        </p>
-      </div>
-    </footer>
+          <p className={styles.rights}>
+            Copyright © 2024 SOOM HOMES All rights reserved.
+          </p>
+          <p style={{ marginTop: "10px" }}>
+            Made with ❤️ by{" "}
+            <a
+              style={{ color: "#c9c9c9" }}
+              href="https://www.linkedin.com/in/ansh-phirani/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Ansh Phirani ✨
+            </a>
+          </p>
+        </div>
+      </footer>
+    </>
   );
 }

@@ -1,11 +1,105 @@
+"use client";
+
 import "@/styles/root.css";
 import styles from "./page.module.css";
 import Image from "next/image";
 import { HowCleaningHappens } from "../page";
+import BookModal, { ServiceSelectModal } from "@/components/BookModal";
+import { useState } from "react";
 
 export default function Services() {
+  const [isModalActive, setIsModalActive] = useState(false);
+
   return (
     <main className={styles.main}>
+      <section className="hero2 hero is-medium">
+        <div className="hero-body is-justify-content-center">
+          <div className="container">
+            <section className="section-content has-text-centered">
+              <h1 className="title home-title is-1">
+                Trusted Commercial & Residential Cleaning Services
+              </h1>
+              <p className="has-text-white content">
+                Soom Cleaning offers exceptional commercial and residential
+                cleaning services in Greater Victoria, & surrounding
+                communities. Our professional cleaning technicians are 100%
+                committed to your satisfaction!
+              </p>
+              <div
+                className={styles.frameWrapper}
+                style={{ maxWidth: "250px", margin: "auto" }}
+              >
+                <div className={styles.frameContainer}>
+                  <div className={styles.frameItem}>
+                    <span className="icon">
+                      <Image width={15} height={15} alt="" src="./book.svg" />
+                    </span>
+                    <button
+                      className={styles.locationInput}
+                      onClick={() => setIsModalActive(true)}
+                    >
+                      Get a Quote
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <ServiceSelectModal
+          isActive={isModalActive}
+          setIsActive={setIsModalActive}
+        />
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="columns is-flex-direction-row-reverse is-justify-content-space-evenly">
+            <div className="columns is-flex-direction-column is-justify-content-center p-2">
+              <div className="section-content">
+                {/* <p
+                  className="text-center"
+                  style={{
+                    color: "var(--brand) !important",
+                    fontSize: "2.5rem",
+                    fontWeight: "bold",
+                    lineHeight: "1.1",
+                  }}
+                >
+                  Perfect care
+                </p> */}
+                <h3
+                  className="text-center"
+                  style={{
+                    fontSize: "2.5rem",
+                    fontWeight: "bold",
+                    lineHeight: "1.1",
+                  }}
+                >
+                  Types of businesses we clean
+                </h3>
+              </div>
+              <div className="section-content">
+                <p
+                  className="text-center is-size-5"
+                  style={{
+                    color: "#313345 !important",
+                  }}
+                >
+                  Stores, medical offices, gyms, salons, spas, law offices,
+                  schools, banks, restaurants, churches, commercial lofts,
+                  galleries, event venues, municipal offices, etc.
+                </p>
+              </div>
+            </div>
+            <div className="column is-6">
+              <Image src="./cleaning-service.jpg" width={500} height={500} />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section">
         <div className="container">
           <div

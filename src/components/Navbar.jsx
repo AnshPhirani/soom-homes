@@ -52,14 +52,26 @@ export default function Navbar() {
         aria-label="main navigation"
       >
         <div className="navbar-brand is-flex is-justify-content-center">
-          <Link href="/" className="navbar-brand-link">
+          <Link
+            href="/"
+            className="navbar-brand-link"
+            style={{
+              // backgroundColor: "red",
+              gap: "0px",
+            }}
+          >
             <Image
-              src={"./logo.png"}
+              src={"./SOOM-LOGO2.png"}
               alt={"SOOM HOMES"}
               width={"50"}
               height={"50"}
             />
-            <h3 style={{ color: "black", textAlign: "center" }}>SOOM HOMES</h3>
+            <div>
+              <h3 style={{ color: "black", textAlign: "center" }}>SOOM</h3>
+              <h3 style={{ color: "var(--brand)", textAlign: "center" }}>
+                CLEANING
+              </h3>
+            </div>
           </Link>
 
           <a
@@ -91,26 +103,26 @@ export default function Navbar() {
                 </Link>
               );
             })}
-            <div className="navbar-item hide-on-desktop show-on-tablet">
+            {/* <div className="navbar-item hide-on-desktop show-on-tablet">
               <button
                 onClick={() => setIsModalActive(true)}
                 className="button is-black hover-brand"
               >
                 Get a Quote
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="navbar-item hide-on-mobile hide-on-tablet">
           <button
-            onClick={() => setIsModalActive(true)}
+            // onClick={() => setIsModalActive(true)}
             className="button is-black hover-brand"
           >
             Get a Quote
           </button>
         </div>
       </nav>
-      <BookModal isActive={isModalActive} setIsActive={setIsModalActive} />
+      {/* <BookModal isActive={isModalActive} setIsActive={setIsModalActive} /> */}
     </>
   );
 }

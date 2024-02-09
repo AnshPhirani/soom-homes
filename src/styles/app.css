@@ -74,12 +74,16 @@ img.notFullWidth {
 
 a.navbar-item.is-active {
   /* color: var(--brand) !important; */
-  color: #000 !important;
-  background-color: #c0e8fe !important;
-  /* background-color: #EBF8FF !important; */
+  /* color: #000 !important; */
+  /* background-color: #c0e8fe !important; */
+  /* background-color: #ebf8ff !important; */
+  /* background-color: var(--brand) !important;
+  backdrop-filter: blur(16px); */
   border-radius: var(--br-13xl);
   padding: 12px 16px;
   font-weight: 700;
+
+  color: var(--brand) !important;
 }
 
 a.navbar-item:hover {
@@ -126,6 +130,14 @@ a.navbar-burger {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.hero2 {
+  background-image: linear-gradient(
+      rgba(10, 10, 10, 0.5),
+      rgba(10, 10, 10, 0.5)
+    ),
+    url("/services-bg.jpg");
 }
 
 .hero-body {
