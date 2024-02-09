@@ -96,10 +96,10 @@ export default function Footer() {
             >
               <Image
                 className={styles.brandImage}
-                src="./logo.png"
-                width={50}
-                height={50}
-                alt=""
+                src="./SOOM-CLEANING.png"
+                width={300}
+                height={250}
+                alt="SOOM CLEANING"
               />
             </div>
             <div className="column is-7 iss-flex is-align-self-center is-justify-content-center">

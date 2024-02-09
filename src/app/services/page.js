@@ -54,6 +54,77 @@ export default function Services() {
       </section>
 
       <section className="section">
+        <div className="container mb-5">
+          <div className="columns is-flex-direction-row is-justify-content-space-evenly gap-2">
+            <div className="columns is-flex-direction-column is-justify-content-center p-2">
+              <div className="section-content">
+                <h3
+                  className="text-center"
+                  style={{
+                    fontSize: "2.5rem",
+                    fontWeight: "bold",
+                    lineHeight: "1.1",
+                  }}
+                >
+                  Some of the services we provide
+                </h3>
+              </div>
+              <div className="section-content">
+                <p
+                  className="text-center is-size-5"
+                  style={{
+                    color: "#313345 !important",
+                  }}
+                >
+                  We focus on your needs. Our detailed-oriented team will exceed
+                  your expectations.
+                </p>
+              </div>
+            </div>
+            <div className="column is-6 columns is-mobile is-multiline is-flex-direction-row is-justify-content-space-around is-align-items-center">
+              <div className="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center">
+                <Image src="./green-checkmark.svg" width={20} height={20} />
+                <div className="column">Floor and carpet vacuuming</div>
+              </div>
+              <div className="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center">
+                <Image src="./green-checkmark.svg" width={20} height={20} />
+                <div className="column">Interior window cleaning</div>
+              </div>
+              <div className="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center">
+                <Image src="./green-checkmark.svg" width={20} height={20} />
+                <div className="column">Bathroom cleaning</div>
+              </div>
+              <div className="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center">
+                <Image src="./green-checkmark.svg" width={20} height={20} />
+                <div className="column">Floor and carpet cleaning</div>
+              </div>
+              <div className="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center">
+                <Image src="./green-checkmark.svg" width={20} height={20} />
+                <div className="column">Snow removal</div>
+              </div>
+              <div className="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center">
+                <Image src="./green-checkmark.svg" width={20} height={20} />
+                <div className="column">Kitchen cleaning</div>
+              </div>
+              <div className="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center">
+                <Image src="./green-checkmark.svg" width={20} height={20} />
+                <div className="column">Pressure Washing</div>
+              </div>
+              <div
+                className="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center"
+                style={{
+                  marginBottom: "0.75rem",
+                }}
+              >
+                <Image src="./green-checkmark.svg" width={20} height={20} />
+                <div className="column">Waste removal</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
         <div className="container">
           <div className="columns is-flex-direction-row-reverse is-justify-content-space-evenly">
             <div className="columns is-flex-direction-column is-justify-content-center p-2">
@@ -100,7 +171,7 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="section">
+      {/* <section className="section">
         <div className="container">
           <div
             className={`section-content m-auto has-text-centered ${styles.mx500}`}
@@ -112,8 +183,9 @@ export default function Services() {
           </div>
         </div>
       </section>
-      {/* <section className={`hero is-medium ${styles.heroBg}`}>
-            </section> */}
+
+      <section className={`hero is-medium ${styles.heroBg}`}>
+            </section> 
       <section className={styles.servicesHeroWrapper}>
         <div className={styles.servicesHeroItem}>
           <div className={styles.servicesHeroItemTextBox}>
@@ -147,7 +219,8 @@ export default function Services() {
             <p>Window Cleaning and others</p>
           </div>
         </div>
-      </section>
+      </section> */}
+
       <section className="mt-20">
         <HowCleaningHappens />
       </section>
