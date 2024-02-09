@@ -103,22 +103,42 @@ export default function Navbar() {
                 </Link>
               );
             })}
-            {/* <div className="navbar-item hide-on-desktop show-on-tablet">
-              <button
+            <div className="navbar-item hide-on-desktop show-on-tablet">
+              {/* <button
                 onClick={() => setIsModalActive(true)}
                 className="button is-black hover-brand"
               >
                 Get a Quote
+              </button> */}
+              <button
+                className="button is-black hover-brand"
+                disabled
+                style={{
+                  border: "none !important",
+                  borderRadius: "2px",
+                }}
+              >
+                Victoria, CA
               </button>
-            </div> */}
+            </div>
           </div>
         </div>
         <div className="navbar-item hide-on-mobile hide-on-tablet">
-          <button
+          {/* <button
             // onClick={() => setIsModalActive(true)}
             className="button is-black hover-brand"
           >
             Get a Quote
+          </button> */}
+          <button
+            className="button is-black hover-brand"
+            disabled
+            style={{
+              border: "none !important",
+              borderRadius: "2px",
+            }}
+          >
+            Victoria, CA
           </button>
         </div>
       </nav>
