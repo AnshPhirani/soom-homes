@@ -129,7 +129,7 @@ export default function Home() {
                       />
                     </span>
                     <button className={styles.locationInput}>
-                      +1 (250) 885-2497
+                      +1 (778) 741-0243
                     </button>
                   </div>
                 </div>
