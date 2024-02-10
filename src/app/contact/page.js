@@ -5,6 +5,29 @@ import styles from "./page.module.css";
 import Image from "next/image";
 
 export default function Contact() {
+  const handleSubmission = async (event) => {
+    event.preventDefault();
+    // Send data to web2forms
+    const formData = new FormData(event.target);
+    formData.append("access_key", "935dafb1-152e-4c34-b260-8a22f6e1e1d8");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    });
+    const result = await response.json();
+    if (result.success) {
+      console.log(result);
+    }
+  };
+
   return (
     <main className={styles.main}>
       <section>
@@ -20,28 +43,28 @@ export default function Contact() {
                 </h4>
                 <p>Our customer support is always active 24/7</p>
               </div>
-              <form
-                className="mt-4"
-                method="post"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                }}
-              >
+              <form className="mt-4" method="post" onSubmit={handleSubmission}>
                 <div className="field">
                   <label className="label">Full name</label>
-                  <input className={`input ${styles.input}`} />
+                  <input name="Name" className={`input ${styles.input}`} />
                 </div>
                 <div className="field">
                   <label className="label">Phone number</label>
-                  <input className={`input ${styles.input}`} />
+                  <input
+                    name="Phone Number"
+                    className={`input ${styles.input}`}
+                  />
                 </div>
                 <div className="field">
                   <label className="label">Location</label>
-                  <input className={`input ${styles.input}`} />
+                  <input name="Location" className={`input ${styles.input}`} />
                 </div>
                 <div className="field">
                   <label className="label">Your message</label>
-                  <textarea className={`input ${styles.input}`}></textarea>
+                  <textarea
+                    name="Message"
+                    className={`input ${styles.input}`}
+                  ></textarea>
                 </div>
                 <div className="field mt-5">
                   <button className="button btn-brand">Send message</button>

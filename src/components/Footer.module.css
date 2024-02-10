@@ -83,10 +83,10 @@
 }
 
 .icon {
-  background-color: var(--brand);
+  /* background-color: var(--brand);
   border-radius: 50%;
   height: 30px;
-  width: 30px;
+  width: 30px; */
 }
 
 .icon:hover {

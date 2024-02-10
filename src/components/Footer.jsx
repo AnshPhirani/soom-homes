@@ -16,7 +16,7 @@ export default function Footer() {
             }}
           >
             <Image
-              src={"./tick-icon.svg"}
+              src={"./blue-checkmark.svg"}
               width={24}
               height={24}
               className={styles.icon}
@@ -35,7 +35,7 @@ export default function Footer() {
             }}
           >
             <Image
-              src={"./tick-icon.svg"}
+              src={"./blue-checkmark.svg"}
               width={24}
               height={24}
               className={styles.icon}
@@ -54,7 +54,7 @@ export default function Footer() {
             }}
           >
             <Image
-              src={"./tick-icon.svg"}
+              src={"./blue-checkmark.svg"}
               width={24}
               height={24}
               className={styles.icon}
@@ -71,7 +71,7 @@ export default function Footer() {
             }}
           >
             <Image
-              src={"./tick-icon.svg"}
+              src={"./blue-checkmark.svg"}
               width={24}
               height={24}
               className={styles.icon}

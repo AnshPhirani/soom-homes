@@ -83,31 +83,31 @@ export default function Services() {
             </div>
             <div className="column is-6 columns is-mobile is-multiline is-flex-direction-row is-justify-content-space-around is-align-items-center">
               <div className="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center">
-                <Image src="./green-checkmark.svg" width={20} height={20} />
+                <Image src="./blue-checkmark.svg" width={20} height={20} />
                 <div className="column">Floor and carpet vacuuming</div>
               </div>
               <div className="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center">
-                <Image src="./green-checkmark.svg" width={20} height={20} />
+                <Image src="./blue-checkmark.svg" width={20} height={20} />
                 <div className="column">Interior window cleaning</div>
               </div>
               <div className="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center">
-                <Image src="./green-checkmark.svg" width={20} height={20} />
+                <Image src="./blue-checkmark.svg" width={20} height={20} />
                 <div className="column">Bathroom cleaning</div>
               </div>
               <div className="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center">
-                <Image src="./green-checkmark.svg" width={20} height={20} />
+                <Image src="./blue-checkmark.svg" width={20} height={20} />
                 <div className="column">Floor and carpet cleaning</div>
               </div>
               <div className="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center">
-                <Image src="./green-checkmark.svg" width={20} height={20} />
+                <Image src="./blue-checkmark.svg" width={20} height={20} />
                 <div className="column">Snow removal</div>
               </div>
               <div className="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center">
-                <Image src="./green-checkmark.svg" width={20} height={20} />
+                <Image src="./blue-checkmark.svg" width={20} height={20} />
                 <div className="column">Kitchen cleaning</div>
               </div>
               <div className="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center">
-                <Image src="./green-checkmark.svg" width={20} height={20} />
+                <Image src="./blue-checkmark.svg" width={20} height={20} />
                 <div className="column">Pressure Washing</div>
               </div>
               <div
@@ -116,7 +116,7 @@ export default function Services() {
                   marginBottom: "0.75rem",
                 }}
               >
-                <Image src="./green-checkmark.svg" width={20} height={20} />
+                <Image src="./blue-checkmark.svg" width={20} height={20} />
                 <div className="column">Waste removal</div>
               </div>
             </div>
