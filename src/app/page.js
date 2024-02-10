@@ -11,6 +11,43 @@ import TestimonialCarousel from "@/components/Testimonial";
 import Reviews from "@/components/Reviews";
 import BookModal, { ServiceSelectModal } from "@/components/BookModal";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  FreeMode,
+  Pagination,
+  Navigation,
+  EffectFade,
+  Autoplay,
+} from "swiper/modules";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
+
+const carouselImages = {
+  "home-cleaning": [
+    "./services-img-1.jpg",
+    "./services-img-2.jpg",
+    "./services-img-3.jpg",
+    "./services-img-4.jpg",
+  ],
+  "business-cleaning": [
+    "./cleaning-item-1.svg",
+    "./cleaning-item-2.svg",
+    "./cleaning-item-3.svg",
+    "./cleaning-item-4.svg",
+  ],
+  "window-cleaning": [
+    "./cleaning-item-1.svg",
+    "./cleaning-item-2.svg",
+    "./cleaning-item-3.svg",
+    "./cleaning-item-4.svg",
+  ],
+};
+
 export const HowCleaningHappens = () => {
   const [index, setIndex] = useState(0);
 
@@ -318,58 +355,166 @@ export default function Home() {
           </div>
 
           <div className={styles.serviceCardContainer}>
-            <div className={`card ${styles.serviceCard} ${styles.hasBrandBg}`}>
-              <div className={styles.serviceCardIcon}>
-                <Image
-                  src="./home-cleaning.jpg"
-                  width={80}
-                  height={80}
-                  // fill={true}
-                  // style={{ objectFit: "contain" }}
-                />
+            <div className={`card ${styles.serviceCard}`}>
+              <div className={styles.serviceCardCarousal}>
+                <Swiper
+                  slidesPerView={1}
+                  spaceBetween={10}
+                  centeredSlides={true}
+                  autoplay={{
+                    delay: 1000,
+                    disableOnInteraction: false,
+                  }}
+                  effect="fade"
+                  modules={[Autoplay, FreeMode, EffectFade]}
+                  className="mySwiper"
+                >
+                  {carouselImages["home-cleaning"].map((image, index) => {
+                    return (
+                      <SwiperSlide key={index}>
+                        <Image
+                          src={image}
+                          width={100}
+                          height={200}
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            borderRadius: "10px",
+                          }}
+                        />
+                      </SwiperSlide>
+                    );
+                  })}
+                </Swiper>
               </div>
-              <h5 className="title is-5 has-text-white ">Home Cleaning</h5>
-              <p>
+              <h5 className="title is-5 mt-4">Home Cleaning</h5>
+              <p style={{ color: "black" }}>
                 To ensure a pleasant living environment for our customers,
                 Perfect Care's professional technology and long-term experience
                 completely removes various fine dust and pollutants.
               </p>
             </div>
-            <div className={`card ${styles.serviceCard} ${styles.hasBlackBg}`}>
-              <div className={styles.serviceCardIcon}>
-                <Image src="./cleaning-item-3.svg" width={20} height={20} />
+            <div className={`card ${styles.serviceCard}`}>
+              <div className={styles.serviceCardCarousal}>
+                <Swiper
+                  slidesPerView={1}
+                  spaceBetween={10}
+                  centeredSlides={true}
+                  autoplay={{
+                    delay: 1000,
+                    disableOnInteraction: false,
+                  }}
+                  effect="fade"
+                  modules={[Autoplay, FreeMode, EffectFade]}
+                  className="mySwiper"
+                >
+                  {carouselImages["home-cleaning"].map((image, index) => {
+                    return (
+                      <SwiperSlide key={index}>
+                        <Image
+                          src={image}
+                          width={100}
+                          height={200}
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            borderRadius: "10px",
+                          }}
+                        />
+                      </SwiperSlide>
+                    );
+                  })}
+                </Swiper>
               </div>
-              <h5 className="title is-5 has-text-white">Business Cleaning</h5>
-              <p>
+              <h5 className="title is-5 mt-4">Business Cleaning</h5>
+              <p style={{ color: "black" }}>
                 To keep the office clean, where you spend the most time on
                 weekdays, we take care of several spaces at once, such as window
-                frames, floors, desks, bathrooms, hallways, conference rooms,
-                and break rooms.
+                frames, floors, desks, bathrooms, and conference rooms.
               </p>
             </div>
-
-            <div className={`card ${styles.serviceCard} ${styles.hasBrandBg}`}>
-              <div className={styles.serviceCardIcon}>
-                <Image src="./cleaning-item-2.svg" width={20} height={20} />
+            <div className={`card ${styles.serviceCard}`}>
+              <div className={styles.serviceCardCarousal}>
+                <Swiper
+                  slidesPerView={1}
+                  spaceBetween={10}
+                  centeredSlides={true}
+                  autoplay={{
+                    delay: 1000,
+                    disableOnInteraction: false,
+                  }}
+                  effect="fade"
+                  modules={[Autoplay, FreeMode, EffectFade]}
+                  className="mySwiper"
+                >
+                  {carouselImages["home-cleaning"].map((image, index) => {
+                    return (
+                      <SwiperSlide key={index}>
+                        <Image
+                          src={image}
+                          width={100}
+                          height={200}
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            borderRadius: "10px",
+                          }}
+                        />
+                      </SwiperSlide>
+                    );
+                  })}
+                </Swiper>
               </div>
-              <h5 className="title is-5 has-text-white">Window Cleaning</h5>
-              <p>
+              <h5 className="title is-5 mt-4">Window Cleaning</h5>
+              <p style={{ color: "black" }}>
                 We will remove any dust or dust generated by the fire and
                 collect residues and waste. Perfect Care’s professional staff
                 works quickly and quickly.
               </p>
             </div>
-          </div>
-
-          <div className={styles.cleaningItemsWrapper}>
-            {/* <div className={styles.cleaningItems}>
-              <div className={styles.cleaningItemsSingle}>
-                <Image src="/cleaning-brush.svg" width={300} height={300} />
+            <div className={`card ${styles.serviceCard}`}>
+              <div className={styles.serviceCardCarousal}>
+                <Swiper
+                  slidesPerView={1}
+                  spaceBetween={10}
+                  centeredSlides={true}
+                  autoplay={{
+                    delay: 1000,
+                    disableOnInteraction: false,
+                  }}
+                  effect="fade"
+                  modules={[Autoplay, FreeMode, EffectFade]}
+                  className="mySwiper"
+                >
+                  {carouselImages["home-cleaning"].map((image, index) => {
+                    return (
+                      <SwiperSlide key={index}>
+                        <Image
+                          src={image}
+                          width={100}
+                          height={200}
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            borderRadius: "10px",
+                          }}
+                        />
+                      </SwiperSlide>
+                    );
+                  })}
+                </Swiper>
               </div>
-              <div className={styles.cleaningItemsSingle}>
-                <Image src="/cleaning-bucket.svg" width={300} height={300} />
-              </div>
-            </div> */}
+              <h5 className="title is-5 mt-4">Pressure Washing</h5>
+              <p style={{ color: "black" }}>
+                Our pressure washing service deeply cleans surfaces and restores
+                your home using state-of-the-art equipment. Revitalize your home
+                with our expert care.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -382,113 +527,4 @@ export default function Home() {
       </section>
     </main>
   );
-}
-
-{
-  /* <div className="section-content">
-<div className={styles.testimonialContainer}>
-<div className={styles.testimonialItem}>
-  <button
-    className={styles.testimonialController}
-    onClick={goToPrevious}
-    disabled={currentSlide === 0}
-  >
-    <Image
-      src="./chevron-back-outline.svg"
-      width={25}
-      height={25}
-    />
-  </button>
-</div>
-<div className={styles.testimonialItem}>
-  <h4 className="title is-4">What our clients say about us</h4>
-</div>
-<div className={styles.testimonialItem}>
-  <button
-    className={styles.testimonialController}
-    onClick={goToNext}
-    disabled={currentSlide === 2}
-  >
-    <Image
-      src="./chevron-forward-outline.svg"
-      width={25}
-      height={25}
-    />
-  </button>
-</div>
-</div>
-</div> */
-}
-{
-  /* <div className="hide-on-desktop mt-5">
-<Carousel
-selectedItem={currentSlide}
-onChange={handleSelect}
-showArrows={false}
-showIndicators={false}
-showThumbs={false}
-infiniteLoop={false}
-autoPlay={false}
-interval={0}
-swipeable={false}
-stopOnHover={false}
->
-
-<div className="carousel-item">
-  <Image
-    src="./testimonial-1.svg"
-    width={500}
-    height={500}
-    alt=""
-  />
-</div>
-<div className="carousel-item">
-  <Image
-    src="./testimonial-2.svg"
-    width={500}
-    height={500}
-    alt=""
-  />
-</div>
-
-<div className="carousel-item">
-  <Image
-    src="./testimonial-3.svg"
-    width={500}
-    height={500}
-    alt=""
-  />
-</div>
-</Carousel>
-</div> */
-}
-{
-  /* <div className="hide-on-mobile mt-5">
-<div className="columns">
-<div className="column is-4">
-  <Image
-    src="./testimonial-1.svg"
-    width={360}
-    height={360}
-    alt=""
-  />
-</div>
-<div className="column is-4">
-  <Image
-    src="./testimonial-2.svg"
-    width={500}
-    height={500}
-    alt=""
-  />
-</div>
-<div className="column is-4">
-  <Image
-    src="./testimonial-3.svg"
-    width={360}
-    height={360}
-    alt=""
-  />
-</div>
-</div>
-</div> */
 }
