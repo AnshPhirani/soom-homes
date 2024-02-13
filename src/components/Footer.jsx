@@ -1,13 +1,13 @@
 import Image from "next/image";
 import styles from "./Footer.module.css";
-
+import Link from "next/link";
 export default function Footer() {
   return (
     <>
       <section className="section">
-        <div class="columns is-multiline is-centered is-vcentered">
+        <div class="columns is-multiline is-centered  is-flex-direction-row is-justify-content-space-around is-align-items-center">
           <div
-            class="column is-half"
+            class="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center"
             style={{
               display: "flex",
               "justify-content": "center",
@@ -94,13 +94,51 @@ export default function Footer() {
                 "align-items": "center",
               }}
             >
-              <Image
+              {/* <Image
                 className={styles.brandImage}
-                src="./SOOM-CLEANING.png"
-                width={300}
-                height={250}
+                src="./SOOM-LOGO2.png"
+                width={150}
+                height={200}
                 alt="SOOM CLEANING"
-              />
+              /> */}
+
+              <div className="navbar-brand is-flex is-justify-content-center">
+                <Link
+                  href="/"
+                  className="navbar-brand-link"
+                  style={{
+                    // backgroundColor: "red",
+                    gap: "0px",
+                  }}
+                >
+                  <Image
+                    src={"./SOOM-LOGO2.png"}
+                    alt={"SOOM HOMES"}
+                    width={"150"}
+                    height={"200"}
+                  />
+                  <div>
+                    <h3
+                      style={{
+                        color: "var(--brand)",
+                        textAlign: "center",
+                        fontSize: "1.5rem",
+                      }}
+                    >
+                      SOOM
+                    </h3>
+                    <h3
+                      style={{
+                        color: "var(--brand)",
+                        textAlign: "center",
+                        fontSize: "1.5rem",
+                      }}
+                    >
+                      CLEANING
+                    </h3>
+                  </div>
+                </Link>
+              </div>
             </div>
             <div className="column is-7 iss-flex is-align-self-center is-justify-content-center">
               <p className={styles.aboutText}>

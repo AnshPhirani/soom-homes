@@ -165,9 +165,12 @@ export default function Home() {
                         src="./call-icon.svg"
                       />
                     </span>
-                    <button className={styles.locationInput}>
+                    <a
+                      className={styles.locationInput}
+                      href="tel:+1778741-0243"
+                    >
                       +1 (778) 741-0243
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

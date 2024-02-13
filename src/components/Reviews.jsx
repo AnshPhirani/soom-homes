@@ -16,6 +16,64 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
+const reviewsData = [
+  {
+    id: 1,
+    name: "Henry Denson",
+    image: "https://randomuser.me/api/portraits/men/62.jpg",
+    date: "21 Nov 2023",
+    rating: 5.0,
+    review:
+      "Fantastic services for cleaning carpets! Their professionalism and attention to detail are quite evident. My carpets feel and look like new—very well done.",
+  },
+  {
+    id: 2,
+    name: "Sayyam Gupta",
+    image: "https://randomuser.me/api/portraits/men/69.jpg",
+    date: "2 days ago",
+    rating: 4.5,
+    review: "They did a great job on my move out cleaning! Highly recommended",
+  },
+
+  {
+    id: 3,
+    name: "Steven James",
+    image: "https://randomuser.me/api/portraits/men/64.jpg",
+    date: "2 days ago",
+    rating: 4.5,
+    review:
+      "Fantastic carpet cleaning assistance! Our carpets appear like new, and the crew worked quickly and expertly. In order to get rid of tough stains, they went abov...",
+  },
+  {
+    id: 4,
+    name: "Ella Smith",
+    image: "https://randomuser.me/api/portraits/women/64.jpg",
+    date: "21 Nov 2023",
+    rating: 5.0,
+    review:
+      "Fantastic services for cleaning carpets! Their professionalism and attention to detail are quite evident. My carpets feel and look like new—very well done.",
+  },
+  {
+    id: 5,
+    name: "Vansh Bhateja",
+    image: "./vansh-bhateja.jpg",
+    date: "5 days ago",
+    rating: 5.0,
+    review: "very good job, everything asked for was professionally done.",
+  },
+];
+
+// const ReviewsData = [
+//   {
+//     id: 1,
+//     name: "Henry Denson",
+//     date: "21 Nov 2023",
+//     rating: 4.5,
+//     review:
+//       "Fantastic services for cleaning carpets! Their professionalism and attention to detail are quite evident. My carpets feel and look like new—very well done.",
+//   },
+// ]
+
 const Reviews = () => {
   return (
     <Swiper
@@ -44,161 +102,36 @@ const Reviews = () => {
       modules={[EffectFade, Autoplay, FreeMode, Pagination, Navigation]}
       className="mySwiper"
     >
-      <SwiperSlide>
-        <div className="container shadow-drop-center h-[250px] sm:h-[220px] flex flex-col w-full max-w-lg mx-auto divide-y rounded-md divide-gray-700 dark:bg-gray-900 dark:text-gray-100">
-          <div className="flex justify-between p-4">
-            <div className="flex space-x-4">
-              <div>
-                <img
-                  src="https://randomuser.me/api/portraits/women/65.jpg"
-                  alt=""
-                  className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
-                />
+      {reviewsData.map((review) => (
+        <SwiperSlide>
+          <div className="container shadow-drop-center h-[250px] sm:h-[220px] flex flex-col w-full max-w-lg mx-auto divide-y rounded-md divide-gray-700">
+            <div className="flex justify-between p-4">
+              <div className="flex space-x-4">
+                <div>
+                  <img
+                    src={review.image}
+                    alt=""
+                    className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
+                  />
+                </div>
+                <div>
+                  <h4 className="font-bold">Review by {review.name}</h4>
+                  <span className="text-xs dark:text-gray-400">
+                    {review.date}
+                  </span>
+                </div>
               </div>
-              <div>
-                <h4 className="font-bold">Review by Jane D</h4>
-                <span className="text-xs dark:text-gray-400">2 days ago</span>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2 text-yellow-500">
-              <AiFillStar />
-              <span className="text-xl font-bold">4.5</span>
-            </div>
-          </div>
-          <div className="p-4  text-sm text-justify dark:text-text_color_dark">
-            <p>
-              I recently used Soom Homes Cleaning service, and the experience
-              was fantastic! The platform was user-friendly, and service was
-              top-notch, and the team arrived on time. I&apos;ll definitely use
-              Soom Homes Cleaning for my future home service needs.
-            </p>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="container shadow-drop-center h-[250px] sm:h-[220px] flex flex-col w-full max-w-lg mx-auto divide-y rounded-md divide-gray-700 dark:bg-gray-900 dark:text-gray-100">
-          <div className="flex justify-between p-4">
-            <div className="flex space-x-4">
-              <div>
-                <img
-                  src="https://randomuser.me/api/portraits/women/65.jpg"
-                  alt=""
-                  className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
-                />
-              </div>
-              <div>
-                <h4 className="font-bold">Review by Jane D</h4>
-                <span className="text-xs dark:text-gray-400">2 days ago</span>
+              <div className="flex items-center space-x-2 text-yellow-500">
+                <AiFillStar />
+                <span className="text-xl font-bold">{review.rating}</span>
               </div>
             </div>
-            <div className="flex items-center space-x-2 text-yellow-500">
-              <AiFillStar />
-              <span className="text-xl font-bold">4.5</span>
+            <div className="p-4  text-sm text-justify dark:text-text_color_dark">
+              <p>{review.review}</p>
             </div>
           </div>
-          <div className="p-4  text-sm text-justify dark:text-text_color_dark">
-            <p>
-              I recently used Soom Homes Cleaning service, and the experience
-              was fantastic! The platform was user-friendly, and service was
-              top-notch, and the team arrived on time. I&apos;ll definitely use
-              Soom Homes Cleaning for my future home service needs.
-            </p>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="container shadow-drop-center h-[250px] sm:h-[220px] flex flex-col w-full max-w-lg mx-auto divide-y rounded-md divide-gray-700 dark:bg-gray-900 dark:text-gray-100">
-          <div className="flex justify-between p-4">
-            <div className="flex space-x-4">
-              <div>
-                <img
-                  src="https://randomuser.me/api/portraits/women/65.jpg"
-                  alt=""
-                  className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
-                />
-              </div>
-              <div>
-                <h4 className="font-bold">Review by Jane D</h4>
-                <span className="text-xs dark:text-gray-400">2 days ago</span>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2 text-yellow-500">
-              <AiFillStar />
-              <span className="text-xl font-bold">4.5</span>
-            </div>
-          </div>
-          <div className="p-4  text-sm text-justify dark:text-text_color_dark">
-            <p>
-              I recently used Soom Homes Cleaning service, and the experience
-              was fantastic! The platform was user-friendly, and service was
-              top-notch, and the team arrived on time. I&apos;ll definitely use
-              Soom Homes Cleaning for my future home service needs.
-            </p>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="container shadow-drop-center h-[250px] sm:h-[220px] flex flex-col w-full max-w-lg mx-auto divide-y rounded-md divide-gray-700 dark:bg-gray-900 dark:text-gray-100">
-          <div className="flex justify-between p-4">
-            <div className="flex space-x-4">
-              <div>
-                <img
-                  src="https://randomuser.me/api/portraits/women/65.jpg"
-                  alt=""
-                  className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
-                />
-              </div>
-              <div>
-                <h4 className="font-bold">Review by Jane D</h4>
-                <span className="text-xs dark:text-gray-400">2 days ago</span>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2 text-yellow-500">
-              <AiFillStar />
-              <span className="text-xl font-bold">4.5</span>
-            </div>
-          </div>
-          <div className="p-4  text-sm text-justify dark:text-text_color_dark">
-            <p>
-              I recently used Soom Homes Cleaning service, and the experience
-              was fantastic! The platform was user-friendly, and service was
-              top-notch, and the team arrived on time. I&apos;ll definitely use
-              Soom Homes Cleaning for my future home service needs.
-            </p>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="container shadow-drop-center h-[250px] sm:h-[220px] flex flex-col w-full max-w-lg mx-auto divide-y rounded-md divide-gray-700 dark:bg-gray-900 dark:text-gray-100">
-          <div className="flex justify-between p-4">
-            <div className="flex space-x-4">
-              <div>
-                <img
-                  src="https://randomuser.me/api/portraits/women/65.jpg"
-                  alt=""
-                  className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
-                />
-              </div>
-              <div>
-                <h4 className="font-bold">Review by Jane D</h4>
-                <span className="text-xs dark:text-gray-400">2 days ago</span>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2 text-yellow-500">
-              <AiFillStar />
-              <span className="text-xl font-bold">4.5</span>
-            </div>
-          </div>
-          <div className="p-4  text-sm text-justify dark:text-text_color_dark">
-            <p>
-              I recently used Soom Homes Cleaning service, and the experience
-              was fantastic! The platform was user-friendly, and service was
-              top-notch, and the team arrived on time. I&apos;ll definitely use
-              Soom Homes Cleaning for my future home service needs.
-            </p>
-          </div>
-        </div>
-      </SwiperSlide>
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };
