@@ -28,24 +28,10 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
 const carouselImages = {
-  "home-cleaning": [
-    "./services-img-1.jpg",
-    "./services-img-2.jpg",
-    "./services-img-3.jpg",
-    "./services-img-4.jpg",
-  ],
-  "business-cleaning": [
-    "./cleaning-item-1.svg",
-    "./cleaning-item-2.svg",
-    "./cleaning-item-3.svg",
-    "./cleaning-item-4.svg",
-  ],
-  "window-cleaning": [
-    "./cleaning-item-1.svg",
-    "./cleaning-item-2.svg",
-    "./cleaning-item-3.svg",
-    "./cleaning-item-4.svg",
-  ],
+  "home-cleaning": ["./home-cleaning1.jpg"],
+  "business-cleaning": ["./business-cleaning2.jpg"],
+  "window-cleaning": ["./window-cleaning2.jpg"],
+  "pressure-washing": ["./pressure-washing1.jpg"],
 };
 
 export const HowCleaningHappens = () => {
@@ -378,7 +364,7 @@ export default function Home() {
                         <Image
                           src={image}
                           width={100}
-                          height={200}
+                          height={100}
                           style={{
                             width: "100%",
                             height: "100%",
@@ -412,7 +398,7 @@ export default function Home() {
                   modules={[Autoplay, FreeMode, EffectFade]}
                   className="mySwiper"
                 >
-                  {carouselImages["home-cleaning"].map((image, index) => {
+                  {carouselImages["business-cleaning"].map((image, index) => {
                     return (
                       <SwiperSlide key={index}>
                         <Image
@@ -452,7 +438,7 @@ export default function Home() {
                   modules={[Autoplay, FreeMode, EffectFade]}
                   className="mySwiper"
                 >
-                  {carouselImages["home-cleaning"].map((image, index) => {
+                  {carouselImages["window-cleaning"].map((image, index) => {
                     return (
                       <SwiperSlide key={index}>
                         <Image
@@ -492,7 +478,7 @@ export default function Home() {
                   modules={[Autoplay, FreeMode, EffectFade]}
                   className="mySwiper"
                 >
-                  {carouselImages["home-cleaning"].map((image, index) => {
+                  {carouselImages["pressure-washing"].map((image, index) => {
                     return (
                       <SwiperSlide key={index}>
                         <Image

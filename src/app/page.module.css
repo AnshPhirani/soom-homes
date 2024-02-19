@@ -281,12 +281,12 @@
 
 .serviceCard {
   max-width: 300px;
-  min-height: 500px;
+  min-height: 450px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   padding: var(--padding-21xl) var(--padding-xl);
   border-radius: var(--br-13xl);
   color: #fff !important;
