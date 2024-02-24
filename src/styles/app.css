@@ -126,7 +126,7 @@ a.navbar-burger {
       rgba(10, 10, 10, 0.5),
       rgba(10, 10, 10, 0.5)
     ),
-    url("/home-bg.jpg");
+    url("/home-bg2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -366,6 +366,43 @@ a.about-card-footer-item:hover {
   .navbar-item > .button {
     width: 100%;
   }
+}
+
+/* swiper code */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 80%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 40%;
 }
 
 /* Styles for Desktop Screens */

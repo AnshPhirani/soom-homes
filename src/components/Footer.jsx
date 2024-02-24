@@ -5,16 +5,8 @@ export default function Footer() {
   return (
     <>
       <section className="section">
-        <div class="columns is-multiline is-centered  is-flex-direction-row is-justify-content-space-around is-align-items-center">
-          <div
-            class="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center"
-            style={{
-              display: "flex",
-              "justify-content": "center",
-              "align-items": "center",
-              gap: "20px",
-            }}
-          >
+        <div className="column is-12 columns is-multiline is-flex-direction-row is-justify-content-space-around is-align-items-center">
+          <div className="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center">
             <Image
               src={"./blue-checkmark.svg"}
               width={24}
@@ -25,15 +17,7 @@ export default function Footer() {
               Use eco-friendly detergents and chemicals!
             </h4>
           </div>
-          <div
-            class="column is-half"
-            style={{
-              display: "flex",
-              "justify-content": "center",
-              "align-items": "center",
-              gap: "20px",
-            }}
-          >
+          <div className="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center">
             <Image
               src={"./blue-checkmark.svg"}
               width={24}
@@ -44,15 +28,7 @@ export default function Footer() {
               Free service to remove harmful bacteria and deodorize!
             </h4>
           </div>
-          <div
-            class="column is-half"
-            style={{
-              display: "flex",
-              "justify-content": "center",
-              "align-items": "center",
-              gap: "20px",
-            }}
-          >
+          <div className="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center">
             <Image
               src={"./blue-checkmark.svg"}
               width={24}
@@ -62,12 +38,9 @@ export default function Footer() {
             <h4 className={styles.text}>Use separate mops for each area!</h4>
           </div>
           <div
-            class="column is-half"
+            className="column is-half columns is-mobile is-flex-direction-row is-justify-content-center is-align-items-center"
             style={{
-              display: "flex",
-              "justify-content": "center",
-              "align-items": "center",
-              gap: "20px",
+              marginBottom: "0.75rem",
             }}
           >
             <Image

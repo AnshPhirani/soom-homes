@@ -26,6 +26,7 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
+import SlidingGallery from "@/components/SlidingGallery";
 
 const carouselImages = {
   "home-cleaning": ["./home-cleaning1.jpg"],
@@ -119,11 +120,13 @@ export default function Home() {
           <div className="container">
             <section className="section-content has-text-centered">
               <h1 className="title home-title is-1">
-                Offers commercial and domestic cleaning services
+                {/* Offers commercial and domestic cleaning services */}
+                Love your life, SOOM Clean your home.
               </h1>
               <p className="has-text-white content">
-                Transforming chaos into clean, one space at a time. your trusted
-                partner for immaculate spaces.
+                {/* Transforming chaos into clean, one space at a time. your trusted
+                partner for immaculate spaces. */}
+                {/* Love your life, SOOM Clean your home. */}
               </p>
               <div
                 className={styles.frameWrapper}
@@ -506,6 +509,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="section">
+        <SlidingGallery />
       </section>
 
       <section className="section">

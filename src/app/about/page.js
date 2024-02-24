@@ -91,38 +91,54 @@ export default function About() {
           <div className={styles.teamWrapper}>
             <div className={styles.teamItem}>
               <div className={styles.teamImage}>
-                <Image src={"./team-1.jpg"} width={150} height={150} />
+                <Image
+                  src={"./about-photos/dohyun-photo.jpg"}
+                  width={150}
+                  height={150}
+                />
               </div>
               <div className={styles.teamMeta}>
                 <p>Dohyun C.</p>
-                <p>CEO, Soom Homes</p>
+                <p>Co-Founder, Soom Cleaning</p>
               </div>
             </div>
             <div className={styles.teamItem}>
               <div className={styles.teamImage}>
-                <Image src={"./team-2.jpg"} width={150} height={150} />
+                <Image
+                  src={"./about-photos/vansh-photo.jpg"}
+                  width={150}
+                  height={150}
+                />
               </div>
               <div className={styles.teamMeta}>
                 <p>Vansh B.</p>
-                <p>CTO, Soom Homes</p>
+                <p>Co-Founder, Soom Cleaning</p>
               </div>
             </div>
             <div className={styles.teamItem}>
               <div className={styles.teamImage}>
-                <Image src={"./team-3.jpg"} width={150} height={150} />
+                <Image
+                  src={"https://randomuser.me/api/portraits/men/78.jpg"}
+                  width={150}
+                  height={150}
+                />
               </div>
               <div className={styles.teamMeta}>
-                <p>Macdonald A.</p>
-                <p>Manager, Soom Homes</p>
+                <p>John K.</p>
+                <p>Sales Manager, Soom Cleaning</p>
               </div>
             </div>
             <div className={styles.teamItem}>
               <div className={styles.teamImage}>
-                <Image src={"./team-4.jpg"} width={150} height={150} />
+                <Image
+                  src={"https://randomuser.me/api/portraits/men/18.jpg"}
+                  width={150}
+                  height={150}
+                />
               </div>
               <div className={styles.teamMeta}>
-                <p>Macdonald A.</p>
-                <p>Managable, Soom Homes</p>
+                <p>Harry N.</p>
+                <p>Sales Manager, Soom Cleaning</p>
               </div>
             </div>
           </div>
