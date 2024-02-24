@@ -29,10 +29,10 @@ import "swiper/css/effect-fade";
 import SlidingGallery from "@/components/SlidingGallery";
 
 const carouselImages = {
-  "home-cleaning": ["./home-cleaning1.jpg"],
-  "business-cleaning": ["./business-cleaning2.jpg"],
-  "window-cleaning": ["./window-cleaning2.jpg"],
-  "pressure-washing": ["./pressure-washing1.jpg"],
+  "home-cleaning": ["./carousel-photos/home.jpg"],
+  "business-cleaning": ["./carousel-photos/commercial.jpg"],
+  "window-cleaning": ["./carousel-photos/window.jpg"],
+  "pressure-washing": ["./carousel-photos/pressure.jpg"],
 };
 
 export const HowCleaningHappens = () => {
@@ -517,6 +517,12 @@ export default function Home() {
       </section>
 
       <section className="section">
+        <div className="section-content">
+          <p className="text-primary mb-2">GALLERY</p>
+          <h3 className="title is-3 fw-bold">
+            Exceeding Expectations with SOOM CLEANING
+          </h3>
+        </div>
         <SlidingGallery />
       </section>
 
