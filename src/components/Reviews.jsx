@@ -28,7 +28,7 @@ const reviewsData = [
   },
   {
     id: 2,
-    name: "Sam Smith",
+    name: "Sam davis",
     image: "https://randomuser.me/api/portraits/men/19.jpg",
     date: "2 days ago",
     rating: 4.5,

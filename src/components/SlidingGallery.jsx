@@ -20,48 +20,64 @@ import styles from "./SlidingGallery.module.css";
 const galleryImages = [
   {
     id: 1,
-    image: "./home-gallery/home-gallery1.jpg",
+    image: "./home-gallery/before1.jpg",
     alt: "Gallery Image 1",
   },
   {
     id: 2,
-    image: "./home-gallery/home-gallery2.jpg",
+    image: "./home-gallery/after1.jpg",
     alt: "Gallery Image 2",
   },
   {
     id: 3,
-    image: "./home-gallery/home-gallery3.jpg",
+    image: "./home-gallery/before2.jpg",
     alt: "Gallery Image 3",
   },
   {
     id: 4,
-    image: "./home-gallery/home-gallery1.jpg",
+    image: "./home-gallery/after2.jpg",
     alt: "Gallery Image 4",
   },
   {
     id: 5,
-    image: "./home-gallery/home-gallery2.jpg",
+    image: "./home-gallery/before3.jpg",
     alt: "Gallery Image 5",
   },
   {
     id: 6,
-    image: "./home-gallery/home-gallery3.jpg",
+    image: "./home-gallery/after3.jpg",
     alt: "Gallery Image 6",
   },
   {
     id: 7,
-    image: "./home-gallery/home-gallery1.jpg",
-    alt: "Gallery Image 4",
+    image: "./home-gallery/before4.jpg",
+    alt: "Gallery Image 7",
   },
   {
     id: 8,
-    image: "./home-gallery/home-gallery2.jpg",
-    alt: "Gallery Image 5",
+    image: "./home-gallery/after4.jpg",
+    alt: "Gallery Image 8",
   },
   {
     id: 9,
-    image: "./home-gallery/home-gallery3.jpg",
-    alt: "Gallery Image 6",
+    image: "./home-gallery/before5.jpg",
+    alt: "Gallery Image 9",
+  },
+  {
+    id: 10,
+    image: "./home-gallery/after5.jpg",
+    alt: "Gallery Image 10",
+  },
+  {
+    id: 11,
+    image: "./home-gallery/before6.jpg",
+
+    alt: "Gallery Image 11",
+  },
+  {
+    id: 12,
+    image: "./home-gallery/after6.jpg",
+    alt: "Gallery Image 12",
   },
 ];
 
