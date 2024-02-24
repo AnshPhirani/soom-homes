@@ -28,8 +28,8 @@ const reviewsData = [
   },
   {
     id: 2,
-    name: "Sayyam Gupta",
-    image: "https://randomuser.me/api/portraits/men/69.jpg",
+    name: "Sam Smith",
+    image: "https://randomuser.me/api/portraits/men/19.jpg",
     date: "2 days ago",
     rating: 4.5,
     review: "They did a great job on my move out cleaning! Highly recommended",

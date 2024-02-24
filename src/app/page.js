@@ -122,7 +122,7 @@ export default function Home() {
               <h1
                 className="title home-title is-1"
                 style={{
-                  fontSize: "2.2rem !important",
+                  fontSize: "2.4rem !important",
                 }}
               >
                 {/* Offers commercial and domestic cleaning services */}
