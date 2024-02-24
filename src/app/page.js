@@ -119,7 +119,12 @@ export default function Home() {
         <div className="hero-body is-justify-content-center">
           <div className="container">
             <section className="section-content has-text-centered">
-              <h1 className="title home-title is-1">
+              <h1
+                className="title home-title is-1"
+                style={{
+                  fontSize: "2.2rem !important",
+                }}
+              >
                 {/* Offers commercial and domestic cleaning services */}
                 Love your life, SOOM Clean your home.
               </h1>

@@ -55,8 +55,8 @@ const reviewsData = [
   },
   {
     id: 5,
-    name: "Vansh Bhateja",
-    image: "./vansh-bhateja.jpg",
+    name: "Wilson",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
     date: "5 days ago",
     rating: 5.0,
     review: "very good job, everything asked for was professionally done.",
