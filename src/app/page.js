@@ -519,9 +519,7 @@ export default function Home() {
       <section className="section">
         <div className="section-content">
           <p className="text-primary mb-2">GALLERY</p>
-          <h3 className="title is-3 fw-bold">
-            Exceeding Expectations with SOOM CLEANING
-          </h3>
+          <h3 className="title is-3 fw-bold">Explore our portfolio</h3>
         </div>
         <SlidingGallery />
       </section>

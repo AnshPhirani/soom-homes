@@ -1,0 +1,39 @@
+.galleryItem {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.galleryImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.type {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--brand);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+/* .galleryImage::after {
+  content: "before";
+  z-index: 10;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  font-size: larger;
+} */

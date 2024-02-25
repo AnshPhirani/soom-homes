@@ -86,7 +86,7 @@ const SlidingGallery = () => {
     <div className="container">
       <Swiper
         slidesPerView={"auto"}
-        spaceBetween={5}
+        spaceBetween={10}
         autoplay={{
           delay: 1500,
           disableOnInteraction: false,
@@ -104,18 +104,18 @@ const SlidingGallery = () => {
                 height: 300,
               }}
             >
-              <Image
-                src={image}
-                alt={alt}
-                width={100}
-                height={100}
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                  borderRadius: "10px",
-                }}
-              />
+              <div className={styles.galleryItem}>
+                <Image
+                  className={styles.galleryImage}
+                  src={image}
+                  alt={alt}
+                  width={100}
+                  height={100}
+                />
+                <h4 className={styles.type}>
+                  {id % 2 != 0 ? "Before" : "After"}
+                </h4>
+              </div>
             </SwiperSlide>
           );
         })}
